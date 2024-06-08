@@ -16,6 +16,23 @@
                 <property expression="get-property(&quot;studentNameCreatedProperty&quot;)" name="NEW_CREATED_PROPERTY_FROM_NAME_IN_REQUEST_BODY"/>
             </log>
             <sequence key="SEQ_ReadPropertyFromSequence"/>
+            <property description="Set Response Code to 401" name="HTTP_SC" scope="axis2" type="INTEGER" value="401"/>
+            <property description="Set JSON_CODE property to be HTTP_SC which I need it to be 401" expression="get-property('axis2','HTTP_SC')" name="JSON_CODE" scope="default" type="STRING"/>
+            <log description="Log JSON_CODE" level="custom">
+                <property expression="get-property(&quot;JSON_CODE&quot;)" name="JSON_CODE_VALUE"/>
+            </log>
+            <payloadFactory description="Set Response Body to be specific value" media-type="json">
+                <format>{&#xd;
+"code" :  0  ,&#xd;
+"message" : "UN-AUTHORIZED"&#xd;
+}</format>
+                <args/>
+            </payloadFactory>
+            <enrich>
+                <source clone="false" property="JSON_CODE" type="property"/>
+                <target xpath="json-eval($.code)"/>
+            </enrich>
+            <property description="Set Response Code to 401" name="HTTP_SC" scope="axis2" type="INTEGER" value="401"/>
             <respond/>
         </inSequence>
         <outSequence/>
