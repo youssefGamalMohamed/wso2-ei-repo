@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="API_ApplyingMessageStoreExample" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_ApplyingMessageStoreExample.xml</file>
+    </artifact>
+    <artifact name="API_ApplyingMessageStoreExample_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_ApplyingMessageStoreExample_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_ApplyingMessageStoreExample_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_ApplyingMessageStoreExample_metadata.yaml</file>
+    </artifact>
+    <artifact name="MS_Messages_Failover" groupId="com.youssef.gamal.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/MS_Messages_Failover.xml</file>
+    </artifact>
+    <artifact name="MS_Message_Store_Student" groupId="com.youssef.gamal.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/MS_Message_Store_Student.xml</file>
+    </artifact>
+    <artifact name="SEQ_HandleStudentMessageFromMessageStore" groupId="com.youssef.gamal.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SEQ_HandleStudentMessageFromMessageStore.xml</file>
+    </artifact>
+    <artifact name="MP_Message_Store_Student_Processor" groupId="com.youssef.gamal.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/MP_Message_Store_Student_Processor.xml</file>
+    </artifact>
+</artifacts>

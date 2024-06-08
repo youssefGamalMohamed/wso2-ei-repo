@@ -1,0 +1,11 @@
+---
+key: "API_ApplyingMessageStoreExample-1.0.0"
+name : "API_ApplyingMessageStoreExample"
+displayName : "API_ApplyingMessageStoreExample"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integration/message-store"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

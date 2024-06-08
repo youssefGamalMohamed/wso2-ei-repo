@@ -1,0 +1,6 @@
+<messageProcessor xmlns="http://ws.apache.org/ns/synapse" class="org.apache.synapse.message.processor.impl.sampler.SamplingProcessor" name="MP_Message_Store_Student_Processor" messageStore="MS_Message_Store_Student">
+<parameter name="sequence">SEQ_HandleStudentMessageFromMessageStore</parameter>
+<parameter name="interval">10000</parameter>
+<parameter name="is.active">true</parameter>
+<parameter name="concurrency">1</parameter>
+</messageProcessor>

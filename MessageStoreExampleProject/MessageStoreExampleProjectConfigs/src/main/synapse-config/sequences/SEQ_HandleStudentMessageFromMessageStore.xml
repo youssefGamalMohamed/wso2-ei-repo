@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="SEQ_HandleStudentMessageFromMessageStore" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property expression="json-eval($)" name="Insisde Sequence and Message After Processor Send it to me = "/>
+    </log>
+</sequence>

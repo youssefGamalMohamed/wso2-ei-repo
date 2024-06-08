@@ -1,0 +1,3 @@
+<api xmlns="http://ws.apache.org/ns/synapse" context="/wso2/integration/scheduled-tasks/users" name="API_GetRandomJsonObject">
+<resource methods="GET"><inSequence/><outSequence/><faultSequence/></resource>
+</api>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integration/scheduled-tasks/users" name="API_GetRandomJsonObject" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>{&#xd;
+"id" : 1,&#xd;
+"name" : "Youssef Gamal"&#xd;
+}</format>
+                <args/>
+            </payloadFactory>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

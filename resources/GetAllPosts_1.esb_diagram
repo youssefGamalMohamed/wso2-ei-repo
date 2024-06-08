@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_9NW1ICUSEe-O2v4MLGLkMw" type="Esb" name="GetAllPosts_1" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_9Nxr4CUSEe-O2v4MLGLkMw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9Nxr5SUSEe-O2v4MLGLkMw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_9X1m0CUSEe-O2v4MLGLkMw" type="3668" fontName="Segoe UI">
+        <children xmi:type="notation:BasicCompartment" xmi:id="_9X1m0iUSEe-O2v4MLGLkMw" type="7044">
+          <children xmi:type="notation:Node" xmi:id="_9X-JsCUSEe-O2v4MLGLkMw" type="3669">
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_9X-JsSUSEe-O2v4MLGLkMw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_9X-JsiUSEe-O2v4MLGLkMw" fontName="Segoe UI"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_9X-JsyUSEe-O2v4MLGLkMw"/>
+            <element xmi:type="esb:APIResource" href="GetAllPosts_1.esb#//@server/@children.0/@resources.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9X-JtCUSEe-O2v4MLGLkMw" width="300" height="400"/>
+          </children>
+        </children>
+        <element xmi:type="esb:SynapseAPI" href="GetAllPosts_1.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9X1m0SUSEe-O2v4MLGLkMw" width="640" height="500"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_9Nxr4SUSEe-O2v4MLGLkMw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9Nxr4iUSEe-O2v4MLGLkMw" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_9Nxr4yUSEe-O2v4MLGLkMw"/>
+    <element xmi:type="esb:EsbServer" href="GetAllPosts_1.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9Nxr5CUSEe-O2v4MLGLkMw"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_9NW1ISUSEe-O2v4MLGLkMw"/>
+  <element xmi:type="esb:EsbDiagram" href="GetAllPosts_1.esb#/"/>
+</notation:Diagram>

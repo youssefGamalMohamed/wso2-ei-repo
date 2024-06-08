@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="SEQ_HandleAutoIncrementedValueFromScheduledTask" groupId="com.youssef.gamal.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SEQ_HandleAutoIncrementedValueFromScheduledTask.xml</file>
+    </artifact>
+    <artifact name="ST_AutoIncrementValueScheuledTask" groupId="com.youssef.gamal.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/tasks/ST_AutoIncrementValueScheuledTask.xml</file>
+    </artifact>
+</artifacts>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="SEQ_HandleAutoIncrementedValueFromScheduledTask" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="get-property('MessageNumber')" name="autoIncrement" scope="default" type="STRING"/>
+    <log description="Log Auto Incremented Value"/>
+</sequence>

@@ -1,0 +1,11 @@
+---
+key: "API_GetRandomJsonObject-1.0.0"
+name : "API_GetRandomJsonObject"
+displayName : "API_GetRandomJsonObject"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integration/scheduled-tasks/users"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

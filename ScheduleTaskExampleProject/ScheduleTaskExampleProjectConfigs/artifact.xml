@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="API_GetRandomJsonObject" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_GetRandomJsonObject.xml</file>
+    </artifact>
+    <artifact name="API_GetRandomJsonObject_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_GetRandomJsonObject_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_GetRandomJsonObject_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_GetRandomJsonObject_metadata.yaml</file>
+    </artifact>
+    <artifact name="SEQ_HandleCallingFromScheduledTask" groupId="com.youssef.gamal.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SEQ_HandleCallingFromScheduledTask.xml</file>
+    </artifact>
+    <artifact name="ST_ScheduledTask" groupId="com.youssef.gamal.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/tasks/ST_ScheduledTask.xml</file>
+    </artifact>
+</artifacts>

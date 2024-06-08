@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task class="org.apache.synapse.startup.tasks.MessageInjector" group="synapse.simple.quartz" name="ST_AutoIncrementValueScheduledTask" xmlns="http://ws.apache.org/ns/synapse">
+    <trigger interval="3000"/>
+    <property name="sequenceName" value="SEQ_HandleAutoIncrementedValueFromScheduledTask" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+</task>

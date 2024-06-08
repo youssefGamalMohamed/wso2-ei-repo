@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.youssef.gamal</groupId>
+    <artifactId>MessageStoreExampleProjectConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.youssef.gamal</groupId>
+  <artifactId>MessageStoreExampleProjectConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>MessageStoreExampleProjectConfigs_module</name>
+  <description>MessageStoreExampleProjectConfigs_module</description>
+  <modules>
+    <module>api/API_ApplyingMessageStoreExample</module>
+    <module>metadata/API_ApplyingMessageStoreExample_swagger</module>
+    <module>metadata/API_ApplyingMessageStoreExample_metadata</module>
+    <module>message-stores/MS_Messages_Failover</module>
+    <module>message-stores/MS_Message_Store_Student</module>
+    <module>sequences/SEQ_HandleStudentMessageFromMessageStore</module>
+    <module>message-processors/MP_Message_Store_Student_Processor</module>
+  </modules>
+</project>

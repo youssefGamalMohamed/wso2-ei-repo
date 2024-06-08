@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task class="org.apache.synapse.startup.tasks.MessageInjector" group="com.youssef.gamal.scheduled.tasks.autoincrementvalues" name="ST_AutoIncrementValueScheuledTask" xmlns="http://ws.apache.org/ns/synapse">
+    <trigger interval="3000"/>
+</task>

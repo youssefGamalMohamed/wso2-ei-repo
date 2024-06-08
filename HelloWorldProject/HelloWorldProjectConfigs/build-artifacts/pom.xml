@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>wso2.sampleHelloWorld</groupId>
+    <artifactId>HelloWorldProjectConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>wso2.sampleHelloWorld</groupId>
+  <artifactId>HelloWorldProjectConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>HelloWorldProjectConfigs_module</name>
+  <description>HelloWorldProjectConfigs_module</description>
+  <modules>
+    <module>api/HelloWorld</module>
+    <module>metadata/HelloWorld_swagger</module>
+    <module>metadata/HelloWorld_metadata</module>
+  </modules>
+</project>

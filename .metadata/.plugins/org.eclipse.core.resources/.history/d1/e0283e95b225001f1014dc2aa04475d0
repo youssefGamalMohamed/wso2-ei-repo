@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task class="org.apache.synapse.startup.tasks.MessageInjector" group="com.youssef.gamal.scheduled.tasks.autoincrementvalues" name="ST_AutoIncrementValueScheuledTask" xmlns="http://ws.apache.org/ns/synapse">
+    <trigger interval="3000"/>
+    <property name="sequence" value="SEQ_HandleAutoIncrementedValueFromScheduledTask" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+    <property name="message" value="increment" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+    <property name="injectTo" value="sequence" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+</task>

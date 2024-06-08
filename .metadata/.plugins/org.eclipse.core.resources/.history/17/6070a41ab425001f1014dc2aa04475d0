@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="SEQ_HandleAutoIncrementedValueFromScheduledTask" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <!-- Ensure MessageNumber property is available and correctly set -->
+    <property expression="get-property('MessageNumber')" name="autoIncrement" scope="default" type="STRING"/>
+    <log level="custom">
+        <property expression="$ctx:autoIncrement" name="Auto Incremented Value"/>
+    </log>
+</sequence>

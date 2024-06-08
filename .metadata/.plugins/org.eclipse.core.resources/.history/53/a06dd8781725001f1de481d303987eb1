@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/integrations/wso2/json-placeholder/posts" name="API_GetAllPosts" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <call>
+                <endpoint>
+                    <http method="get" uri-template="https://jsonplaceholder.typicode.com/posts">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>-1</progressionFactor>
+                            <maximumDuration>0</maximumDuration>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </http>
+                    <description>GET /jsonplaceholder.typicode.com/posts</description>
+                </endpoint>
+            </call>
+            <log description="Log After Calling GET /jsonplaceholder/posts" level="custom"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

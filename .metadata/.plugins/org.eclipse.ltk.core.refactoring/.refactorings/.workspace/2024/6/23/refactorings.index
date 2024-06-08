@@ -1,0 +1,6 @@
+1717794653197	Delete resource 'JsonPlaceHolderIntegration'
+1717794688972	Delete resource 'JsonPlaceHolderIntegration'
+1717794694810	Delete resource 'HelloWorldProject/JsonPlaceHolderIntegration'
+1717795013239	Delete resource 'JsonPlaceHolderIntegrationConfigs/src/main/synapse-config/api/GetAllPosts_1.xml'
+1717864094355	Delete resource 'ScheduleTaskExampleProjectConfigs/src/main/synapse-config/sequences/SEQ_HandleAutoIncrementedValueFromScheduledTask.xml'
+1717864098564	Delete resource 'ScheduleTaskExampleProjectConfigs/src/main/synapse-config/tasks/ST_AutoIncrementValueScheuledTask.xml'

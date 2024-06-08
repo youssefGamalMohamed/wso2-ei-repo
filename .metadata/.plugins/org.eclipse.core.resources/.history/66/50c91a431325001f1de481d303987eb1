@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="GetAllPosts_1" groupId="com.youssef.gamal.api" version="1" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/GetAllPosts_1.xml</file>
+    </artifact>
+    <artifact name="GetAllPosts_1_swagger" groupId="com.youssef.gamal.metadata" version="1" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/GetAllPosts_1_swagger.yaml</file>
+    </artifact>
+    <artifact name="GetAllPosts_1_metadata" groupId="com.youssef.gamal.metadata" version="1" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/GetAllPosts_1_metadata.yaml</file>
+    </artifact>
+</artifacts>
