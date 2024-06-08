@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="SEQ_ReadPropertyFromSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log description="Log Sent/Passed/Delegeated Property from the API_CreateStudent" level="custom">
+        <property expression="get-property(&quot;studentNameCreatedProperty&quot;)" name="SEQUENCE_STUDENT_NAME"/>
+    </log>
+</sequence>

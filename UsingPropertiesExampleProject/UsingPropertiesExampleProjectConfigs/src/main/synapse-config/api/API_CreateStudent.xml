@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integration/students" name="API_CreateStudent" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log description="Log Value From Request Header" level="custom">
+                <property expression="$trp:Content-Type" name="REUQEST_CONTENT_TYPE"/>
+            </log>
+            <log description="Log Value From JSON Request Body" level="custom">
+                <property expression="json-eval($.name)" name="STUDENT_REQUEST_BODY_NAME"/>
+            </log>
+            <log description="Log Value From URL(Query Param)" level="custom">
+                <property expression="$url:schoolName" name="SCHOOLE_QUERY_PARAM"/>
+            </log>
+            <property description="create new property from student name from request body" expression="json-eval($.name)" name="studentNameCreatedProperty" scope="default" type="STRING"/>
+            <log description="Log the create new property" level="custom">
+                <property expression="get-property(&quot;studentNameCreatedProperty&quot;)" name="NEW_CREATED_PROPERTY_FROM_NAME_IN_REQUEST_BODY"/>
+            </log>
+            <sequence key="SEQ_ReadPropertyFromSequence"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

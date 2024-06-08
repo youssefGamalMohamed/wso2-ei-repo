@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="API_CreateStudent" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_CreateStudent.xml</file>
+    </artifact>
+    <artifact name="API_CreateStudent_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_CreateStudent_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_CreateStudent_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_CreateStudent_metadata.yaml</file>
+    </artifact>
+    <artifact name="SEQ_ReadPropertyFromSequence" groupId="com.youssef.gamal.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SEQ_ReadPropertyFromSequence.xml</file>
+    </artifact>
+</artifacts>
