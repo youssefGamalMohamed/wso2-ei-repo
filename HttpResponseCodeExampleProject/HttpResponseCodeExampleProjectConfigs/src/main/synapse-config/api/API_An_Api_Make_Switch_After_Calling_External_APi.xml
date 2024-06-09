@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/switch-cases" name="API_An_Api_Make_Switch_After_Calling_External_APi" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <call>
+                <endpoint>
+                    <http method="get" uri-template="http://localhost:8290/bakcned/api/v2/un-authorized">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>-1</progressionFactor>
+                            <maximumDuration>0</maximumDuration>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </http>
+                    <description>Call External API</description>
+                </endpoint>
+            </call>
+            <log description="Log Http Status Code" level="custom">
+                <property expression="$axis2:HTTP_SC" name="HTTP_STATUS_CODE"/>
+            </log>
+            <switch source="$axis2:HTTP_SC">
+                <case regex="200">
+                    <payloadFactory description="Set Reponse Message" media-type="json">
+                        <format>{&#xd;
+"message" : "OK"&#xd;
+}</format>
+                        <args/>
+                    </payloadFactory>
+                </case>
+                <case regex="401">
+                    <payloadFactory description="Set Response Body" media-type="json">
+                        <format>{&#xd;
+"message" :  "UN-AUTHORIZED"&#xd;
+}</format>
+                        <args/>
+                    </payloadFactory>
+                </case>
+                <case regex="404">
+                    <payloadFactory description="Set Response Body" media-type="json">
+                        <format>{&#xd;
+"message" : "NOT_FOUND"&#xd;
+}</format>
+                        <args/>
+                    </payloadFactory>
+                </case>
+                <default>
+                    <payloadFactory description="Set Un Expected Response" media-type="json">
+                        <format>{&#xd;
+"message" : "un expected response code"&#xd;
+}</format>
+                        <args/>
+                    </payloadFactory>
+                </default>
+            </switch>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

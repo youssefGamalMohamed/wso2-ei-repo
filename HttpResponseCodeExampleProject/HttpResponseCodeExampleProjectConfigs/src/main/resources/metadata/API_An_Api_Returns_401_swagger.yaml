@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: API_An_Api_Returns_401
+  description: API Definition of API_An_Api_Returns_401
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/bakcned/api/v2/un-authorized
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response

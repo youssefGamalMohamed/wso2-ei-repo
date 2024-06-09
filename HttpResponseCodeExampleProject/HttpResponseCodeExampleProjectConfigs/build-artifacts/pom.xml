@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.youssef.gamal</groupId>
+    <artifactId>HttpResponseCodeExampleProjectConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.youssef.gamal</groupId>
+  <artifactId>HttpResponseCodeExampleProjectConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>HttpResponseCodeExampleProjectConfigs_module</name>
+  <description>HttpResponseCodeExampleProjectConfigs_module</description>
+  <modules>
+    <module>api/API_An_Api_Returns_401</module>
+    <module>metadata/API_An_Api_Returns_401_swagger</module>
+    <module>metadata/API_An_Api_Returns_401_metadata</module>
+    <module>api/API_An_Api_Returns_404</module>
+    <module>metadata/API_An_Api_Returns_404_swagger</module>
+    <module>metadata/API_An_Api_Returns_404_metadata</module>
+    <module>api/API_An_Api_Returns_200</module>
+    <module>metadata/API_An_Api_Returns_200_swagger</module>
+    <module>metadata/API_An_Api_Returns_200_metadata</module>
+    <module>api/API_An_Api_Make_Switch_After_Calling_External_APi</module>
+    <module>metadata/API_An_Api_Make_Switch_After_Calling_External_APi_swagger</module>
+    <module>metadata/API_An_Api_Make_Switch_After_Calling_External_APi_metadata</module>
+  </modules>
+</project>

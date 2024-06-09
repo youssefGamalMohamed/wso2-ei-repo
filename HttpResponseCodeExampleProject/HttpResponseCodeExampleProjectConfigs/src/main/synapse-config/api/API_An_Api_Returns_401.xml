@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/bakcned/api/v2/un-authorized" name="API_An_Api_Returns_401" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property description="Set Http Response Code to be 401" name="HTTP_SC" scope="axis2" type="STRING" value="401"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

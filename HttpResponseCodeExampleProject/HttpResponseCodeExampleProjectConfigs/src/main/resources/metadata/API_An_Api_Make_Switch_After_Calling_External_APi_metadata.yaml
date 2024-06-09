@@ -1,0 +1,11 @@
+---
+key: "API_An_Api_Make_Switch_After_Calling_External_APi-1.0.0"
+name : "API_An_Api_Make_Switch_After_Calling_External_APi"
+displayName : "API_An_Api_Make_Switch_After_Calling_External_APi"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integrations/switch-cases"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

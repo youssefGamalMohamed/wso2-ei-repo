@@ -1,0 +1,11 @@
+---
+key: "API_An_Api_Returns_401-1.0.0"
+name : "API_An_Api_Returns_401"
+displayName : "API_An_Api_Returns_401"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/bakcned/api/v2/un-authorized"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

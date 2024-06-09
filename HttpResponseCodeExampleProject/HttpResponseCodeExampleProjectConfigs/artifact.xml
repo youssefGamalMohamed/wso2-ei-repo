@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="API_An_Api_Returns_401" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_An_Api_Returns_401.xml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_401_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Returns_401_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_401_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Returns_401_metadata.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_404" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_An_Api_Returns_404.xml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_404_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Returns_404_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_404_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Returns_404_metadata.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_200" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_An_Api_Returns_200.xml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_200_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Returns_200_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Returns_200_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Returns_200_metadata.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Make_Switch_After_Calling_External_APi" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_An_Api_Make_Switch_After_Calling_External_APi.xml</file>
+    </artifact>
+    <artifact name="API_An_Api_Make_Switch_After_Calling_External_APi_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Make_Switch_After_Calling_External_APi_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_An_Api_Make_Switch_After_Calling_External_APi_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_An_Api_Make_Switch_After_Calling_External_APi_metadata.yaml</file>
+    </artifact>
+</artifacts>
