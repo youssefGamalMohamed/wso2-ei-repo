@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/students/real-integration-endpoint" name="API_Integration_Call" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <call>
+                <endpoint>
+                    <http method="get" uri-template="http://localhost:8290/wso2/integrations/students/static-data">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>-1</progressionFactor>
+                            <maximumDuration>0</maximumDuration>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </http>
+                </endpoint>
+            </call>
+            <log level="custom">
+                <property expression="$body" name="RESPONSE_FROM_BACKEND"/>
+                <property expression="get-property('transport', 'Content-Type')" name="backendResponseContentType"/>
+            </log>
+            <property expression="json-eval($.)" name="backendResponse" scope="default" type="STRING"/>
+            <payloadFactory media-type="json" template-type="freemarker">
+                <format><![CDATA[
+{
+    "id": ${args.arg1},
+    "name": "${args.arg2}",
+    "backendStatusCode": ${args.arg3},
+    "backendResponseContentType": "${args.arg5}",
+    "backendData": ${args.arg4}
+}
+                ]]></format>
+                <args>
+                    <arg evaluator="json" expression="$.id"/>
+                    <arg evaluator="json" expression="$.name"/>
+                    <arg evaluator="xml" expression="get-property('axis2', 'HTTP_SC')"/>
+                    <arg evaluator="xml" expression="get-property('backendResponse')"/>
+                    <arg evaluator="xml" expression="get-property('transport', 'Content-Type')"/>
+                </args>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

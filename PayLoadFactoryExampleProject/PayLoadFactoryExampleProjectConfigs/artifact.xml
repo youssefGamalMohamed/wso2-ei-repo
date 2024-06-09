@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="API_Get_Student_Dummy_Data" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_Get_Student_Dummy_Data.xml</file>
+    </artifact>
+    <artifact name="API_Get_Student_Dummy_Data_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_Get_Student_Dummy_Data_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_Get_Student_Dummy_Data_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_Get_Student_Dummy_Data_metadata.yaml</file>
+    </artifact>
+    <artifact name="API_Integration_Call" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_Integration_Call.xml</file>
+    </artifact>
+    <artifact name="API_Integration_Call_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_Integration_Call_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_Integration_Call_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_Integration_Call_metadata.yaml</file>
+    </artifact>
+</artifacts>

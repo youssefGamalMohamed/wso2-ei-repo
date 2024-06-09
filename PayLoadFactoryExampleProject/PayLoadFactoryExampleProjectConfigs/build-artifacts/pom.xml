@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.youssef.gamal</groupId>
+    <artifactId>PayLoadFactoryExampleProjectConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.youssef.gamal</groupId>
+  <artifactId>PayLoadFactoryExampleProjectConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>PayLoadFactoryExampleProjectConfigs_module</name>
+  <description>PayLoadFactoryExampleProjectConfigs_module</description>
+  <modules>
+    <module>api/API_Get_Student_Dummy_Data</module>
+    <module>metadata/API_Get_Student_Dummy_Data_swagger</module>
+    <module>metadata/API_Get_Student_Dummy_Data_metadata</module>
+    <module>api/API_Integration_Call</module>
+    <module>metadata/API_Integration_Call_swagger</module>
+    <module>metadata/API_Integration_Call_metadata</module>
+  </modules>
+</project>

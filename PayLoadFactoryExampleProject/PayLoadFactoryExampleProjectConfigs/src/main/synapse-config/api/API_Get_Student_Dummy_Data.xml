@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/students/static-data" name="API_Get_Student_Dummy_Data" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <payloadFactory description="Prepare Response Body" media-type="json">
+                <format>{&#xd;
+     "id" : "$1",&#xd;
+     "name" : "$2"&#xd;
+}</format>
+                <args>
+                    <arg value="1"/>
+                    <arg value="Youssef Gamal Mohamed Elsayed"/>
+                </args>
+            </payloadFactory>
+            <log level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
