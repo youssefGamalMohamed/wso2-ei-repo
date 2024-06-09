@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/filters/students" name="API_CreateStuden_With_Filtert" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <filter xpath="$body//id = 1">
+                <then>
+                    <log description="ID = 1" level="custom">
+                        <property name="ID_IS_EQUAL_ONE" value="1"/>
+                    </log>
+                </then>
+                <else>
+                    <log description="ID != 2" level="custom">
+                        <property name="MESSAGE" value="ID != 2"/>
+                    </log>
+                </else>
+            </filter>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

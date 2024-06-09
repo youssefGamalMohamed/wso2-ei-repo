@@ -1,0 +1,11 @@
+---
+key: "API_CreateStudent-1.0.0"
+name : "API_CreateStudent"
+displayName : "API_CreateStudent"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integrations/students"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"
