@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <esb:EsbDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb">
   <server type="API">
-    <children xsi:type="esb:SynapseAPI" apiName="API_Employee" context="/wso2/integrations/employee">
+    <children xsi:type="esb:SynapseAPI" apiName="API_Employee" context="/wso2/integrations/db-lookup/employees">
       <resources allowGet="true">
         <inputConnector/>
         <outputConnector>
@@ -30,43 +30,43 @@
               <children xsi:type="esb:LogMediator" description="Log Response From DB" logLevel="CUSTOM" logSeparator=", ">
                 <inputConnector incomingLinks="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
                 <outputConnector>
-                  <outgoingLink target="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                  <outgoingLink target="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@inputConnector"/>
                 </outputConnector>
                 <properties propertyName="DB_RESPONSE_EMPLOYEE_ID" propertyValueType="EXPRESSION" propertyValue="">
-                  <propertyExpression prettyName="property expression" propertyName="expression" propertyValue="get-property('employee_id')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <propertyExpression propertyValue="get-property('employee_id')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </properties>
                 <properties propertyName="DB_RESPONSE_EMPLOYEE_NAME" propertyValueType="EXPRESSION" propertyValue="">
-                  <propertyExpression prettyName="property expression" propertyName="expression" propertyValue="get-property('employee_name')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <propertyExpression propertyValue="get-property('employee_name')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </properties>
                 <properties propertyName="DB_RESPONSE_EMPLOYEE_AGE" propertyValueType="EXPRESSION" propertyValue="">
-                  <propertyExpression prettyName="property expression" propertyName="expression" propertyValue="get-property('employee_age')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <propertyExpression propertyValue="get-property('employee_age')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </properties>
                 <properties propertyName="DB_RESPONSE_EMPLOYEE_SALARY" propertyValueType="EXPRESSION" propertyValue="">
-                  <propertyExpression prettyName="property expression" propertyName="expression" propertyValue="get-property('employee_salary')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <propertyExpression propertyValue="get-property('employee_salary')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </properties>
-              </children>
-              <children xsi:type="esb:RespondMediator">
-                <inputConnector incomingLinks="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
-                <outputConnector/>
               </children>
               <children xsi:type="esb:PayloadFactoryMediator" description="Prepare Response" payload="{&#xD;&#xA;   &quot;id&quot; : $1,&#xD;&#xA;   &quot;name&quot; : &quot;$2&quot;,&#xD;&#xA;   &quot;age&quot; : $3,&#xD;&#xA;    &quot;salary&quot; : $4&#xD;&#xA;}" mediaType="json">
                 <payloadKey prettyName="Sequence Key" keyName="Sequence Key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 <args argumentType="Expression">
-                  <argumentExpression prettyName="Argument Expression" propertyName="Argument Expression" propertyValue="get-property('employee_id')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <argumentExpression propertyValue="get-property('employee_id')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </args>
                 <args argumentType="Expression">
-                  <argumentExpression prettyName="Argument Expression" propertyName="Argument Expression" propertyValue="get-property('employee_name')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <argumentExpression propertyValue="get-property('employee_name')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </args>
                 <args argumentType="Expression">
-                  <argumentExpression prettyName="Argument Expression" propertyName="Argument Expression" propertyValue="get-property('employee_age')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <argumentExpression propertyValue="get-property('employee_age')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </args>
                 <args argumentType="Expression">
-                  <argumentExpression prettyName="Argument Expression" propertyName="Argument Expression" propertyValue="get-property('employee_salary')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <argumentExpression propertyValue="get-property('employee_salary')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </args>
                 <inputConnector incomingLinks="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
                 <outputConnector>
-                  <outgoingLink target="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                  <outgoingLink target="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
                 </outputConnector>
+              </children>
+              <children xsi:type="esb:RespondMediator">
+                <inputConnector incomingLinks="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+                <outputConnector/>
               </children>
             </mediatorFlow>
           </sequenceAndEndpointContainer>

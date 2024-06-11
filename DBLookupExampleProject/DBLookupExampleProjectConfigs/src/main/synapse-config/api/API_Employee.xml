@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api context="/wso2/integrations/employee" name="API_Employee" xmlns="http://ws.apache.org/ns/synapse">
+<api context="/wso2/integrations/db-lookup/employees" name="API_Employee" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET">
         <inSequence>
             <dblookup description="Find Employee By ID">

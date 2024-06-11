@@ -4,7 +4,7 @@ info:
   description: API Definition of API_Employee
   version: 1.0.0
 servers:
-- url: http://localhost:8290/wso2/integrations/employee
+- url: http://localhost:8290/wso2/integrations/db-lookup/employees
 paths:
   /:
     get:
