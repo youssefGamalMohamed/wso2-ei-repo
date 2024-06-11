@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="employee-request-body-json-schema" xmlns="http://ws.apache.org/ns/synapse"><![CDATA[{  "$schema": "http://json-schema.org/draft-04/schema#",  "type": "object",  "properties": {    "id": {      "type": "integer"    },    "name": {      "type": "string"    },    "age": {      "type": "integer"    },    "salary": {      "type": "number"    }  },  "required": [    "id",    "name",    "age",    "salary"  ]}]]></localEntry>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/validate-json/employees" name="API_ValidateJsonRequest" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST GET">
+        <inSequence>
+            <validate cache-schema="true" source="json-eval($)">
+                <schema key="employee-request-body-json-schema"/>
+                <on-fail>
+                    <payloadFactory description="Prepare Bad Request Repsonse Message" media-type="json">
+                        <format>{&#xd;
+  "validationErrorDetails :  {&#xd;
+   		"msg" : "$1",&#xd;
+        "detail" : "$4",&#xd;
+		"errorCode" : "$2",&#xd;
+        "exception" : "$3"&#xd;
+   }&#xd;
+}</format>
+                        <args>
+                            <arg evaluator="xml" expression="get-property('ERROR_MESSAGE')"/>
+                            <arg evaluator="xml" expression="get-property('ERROR_CODE')"/>
+                            <arg evaluator="xml" expression="get-property('ERROR_EXCEPTION')"/>
+                            <arg evaluator="xml" expression="get-property('ERROR_DETAIL')"/>
+                        </args>
+                    </payloadFactory>
+                    <log description="LOG WHEN VALIDATION FAILS" level="full">
+                        <property name="VALIDATION" value="FAILED IN VALIDATION"/>
+                    </log>
+                    <property description="Set HTTP Status Code to 400" name="HTTP_SC" scope="axis2" type="INTEGER" value="400"/>
+                </on-fail>
+            </validate>
+            <log description="LOG AFTER SUCCESS VALIDATION" level="full">
+                <property name="VALIDATION SUCCESS" value="DONE"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
