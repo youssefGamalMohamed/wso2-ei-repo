@@ -1,0 +1,11 @@
+---
+key: "API_GetAllUsers_With_Caching-1"
+name : "API_GetAllUsers_With_Caching"
+displayName : "API_GetAllUsers_With_Caching"
+description: "Sample API"
+version: "1"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integrations/caching/users"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"
