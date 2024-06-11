@@ -66,7 +66,7 @@
                   <argumentExpression propertyValue="get-property('backendResponse')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </args>
                 <args argumentType="Expression">
-                  <argumentExpression prettyName="Argument Expression" propertyName="Argument Expression" propertyValue="get-property('transport', 'Content-Type')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+                  <argumentExpression propertyValue="get-property('transport', 'Content-Type')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
                 </args>
                 <inputConnector incomingLinks="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
                 <outputConnector>

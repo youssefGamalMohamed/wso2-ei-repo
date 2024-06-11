@@ -10,4 +10,14 @@
 			<item value="org.wso2.integrationstudio.import"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="FileSystemExportWizard">
+		<item key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_RESOLVE_LINKED_RESOURCES_ID" value="false"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\youssef.gamal\Desktop\MessageStoreWIthDBExample"/>
+		</list>
+	</section>
 </section>

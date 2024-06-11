@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/employee" name="API_Employee" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <dblookup description="Find Employee By ID">
+                <connection>
+                    <pool>
+                        <driver>com.mysql.cj.jdbc.Driver</driver>
+                        <url>jdbc:mysql://localhost:3306/employee_db</url>
+                        <user>root</user>
+                        <password>1234</password>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql><![CDATA[SELECT id,name,age,salary FROM employees WHERE id = ?]]></sql>
+                    <parameter expression="$url:id" type="INTEGER"/>
+                    <result column="id" name="employee_id"/>
+                    <result column="name" name="employee_name"/>
+                    <result column="salary" name="employee_salary"/>
+                    <result column="age" name="employee_age"/>
+                </statement>
+            </dblookup>
+            <log description="Log Response From DB" level="custom">
+                <property expression="get-property('employee_id')" name="DB_RESPONSE_EMPLOYEE_ID"/>
+                <property expression="get-property('employee_name')" name="DB_RESPONSE_EMPLOYEE_NAME"/>
+                <property expression="get-property('employee_age')" name="DB_RESPONSE_EMPLOYEE_AGE"/>
+                <property expression="get-property('employee_salary')" name="DB_RESPONSE_EMPLOYEE_SALARY"/>
+            </log>
+            <payloadFactory description="Prepare Response" media-type="json">
+                <format>{&#xd;
+   "id" : $1,&#xd;
+   "name" : "$2",&#xd;
+   "age" : $3,&#xd;
+    "salary" : $4&#xd;
+}</format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('employee_id')"/>
+                    <arg evaluator="xml" expression="get-property('employee_name')"/>
+                    <arg evaluator="xml" expression="get-property('employee_age')"/>
+                    <arg evaluator="xml" expression="get-property('employee_salary')"/>
+                </args>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

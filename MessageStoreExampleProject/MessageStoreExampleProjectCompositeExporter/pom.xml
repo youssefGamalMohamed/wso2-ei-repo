@@ -14,8 +14,8 @@
   <name>MessageStoreExampleProjectCompositeExporter</name>
   <description>MessageStoreExampleProjectCompositeExporter</description>
   <properties>
-    <com.youssef.gamal.metadata_._API_ApplyingMessageStoreExample_metadata>capp/EnterpriseServiceBus</com.youssef.gamal.metadata_._API_ApplyingMessageStoreExample_metadata>
     <com.youssef.gamal.message-store_._MS_Message_Store_Student>capp/EnterpriseServiceBus</com.youssef.gamal.message-store_._MS_Message_Store_Student>
+    <com.youssef.gamal.metadata_._API_ApplyingMessageStoreExample_metadata>capp/EnterpriseServiceBus</com.youssef.gamal.metadata_._API_ApplyingMessageStoreExample_metadata>
     <com.youssef.gamal.metadata_._API_ApplyingMessageStoreExample_swagger>capp/EnterpriseServiceBus</com.youssef.gamal.metadata_._API_ApplyingMessageStoreExample_swagger>
     <com.youssef.gamal.api_._API_ApplyingMessageStoreExample>capp/EnterpriseServiceBus</com.youssef.gamal.api_._API_ApplyingMessageStoreExample>
     <com.youssef.gamal.message-processors_._MP_Message_Store_Student_Processor>capp/EnterpriseServiceBus</com.youssef.gamal.message-processors_._MP_Message_Store_Student_Processor>
@@ -24,6 +24,12 @@
     <com.youssef.gamal.sequence_._SEQ_HandleStudentMessageFromMessageStore>capp/EnterpriseServiceBus</com.youssef.gamal.sequence_._SEQ_HandleStudentMessageFromMessageStore>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>com.youssef.gamal.message-store</groupId>
+      <artifactId>MS_Message_Store_Student</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
     <dependency>
       <groupId>com.youssef.gamal.metadata</groupId>
       <artifactId>API_ApplyingMessageStoreExample_metadata</artifactId>
@@ -35,6 +41,12 @@
       <artifactId>API_ApplyingMessageStoreExample_swagger</artifactId>
       <version>1.0.0</version>
       <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.youssef.gamal.api</groupId>
+      <artifactId>API_ApplyingMessageStoreExample</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
     </dependency>
     <dependency>
       <groupId>com.youssef.gamal.message-processors</groupId>
@@ -51,18 +63,6 @@
     <dependency>
       <groupId>com.youssef.gamal.sequence</groupId>
       <artifactId>SEQ_HandleStudentMessageFromMessageStore</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.youssef.gamal.message-store</groupId>
-      <artifactId>MS_Message_Store_Student</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.youssef.gamal.api</groupId>
-      <artifactId>API_ApplyingMessageStoreExample</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

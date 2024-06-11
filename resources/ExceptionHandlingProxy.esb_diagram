@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_E5E6ICfFEe-_2PFhqZs3YQ" type="Esb" name="ExceptionHandlingProxy" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_E5l3gCfFEe-_2PFhqZs3YQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_E5l3hSfFEe-_2PFhqZs3YQ" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_E_GpoCfFEe-_2PFhqZs3YQ" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_E_GppSfFEe-_2PFhqZs3YQ" type="5003"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_E_GpoSfFEe-_2PFhqZs3YQ"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_E_GpoifFEe-_2PFhqZs3YQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_E_GpoyfFEe-_2PFhqZs3YQ"/>
+        <element xmi:type="esb:ProxyService" href="ExceptionHandlingProxy.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E_GppCfFEe-_2PFhqZs3YQ" width="300" height="400"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_E5l3gSfFEe-_2PFhqZs3YQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_E5l3gifFEe-_2PFhqZs3YQ" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_E5l3gyfFEe-_2PFhqZs3YQ"/>
+    <element xmi:type="esb:EsbServer" href="ExceptionHandlingProxy.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E5l3hCfFEe-_2PFhqZs3YQ"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_E5E6ISfFEe-_2PFhqZs3YQ"/>
+  <element xmi:type="esb:EsbDiagram" href="ExceptionHandlingProxy.esb#/"/>
+</notation:Diagram>
