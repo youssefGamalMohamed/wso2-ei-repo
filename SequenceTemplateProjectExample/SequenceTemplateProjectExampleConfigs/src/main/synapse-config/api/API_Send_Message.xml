@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integratione/sequence-template/example" name="API_Send_Message" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log description="LOG REQUEST" level="custom">
+                <property expression="get-property('MessageID')" name="REFERENCE-ID"/>
+                <property expression="json-eval($)" name="REQUEST-BODY"/>
+            </log>
+            <call-template description="Call our defined Sequence Template" target="SEQT_SendMessageTemplate">
+                <with-param name="message_text" value="{json-eval($.messageText)}"/>
+                <with-param name="message_type" value="{json-eval($.messagType)}"/>
+                <with-param name="from" value="{json-eval($.from)}"/>
+                <with-param name="to" value="{json-eval($.to)}"/>
+            </call-template>
+            <log description="LOG RESPONSE" level="custom">
+                <property expression="get-property('MessageID')" name="REFERENCE-ID"/>
+                <property expression="json-eval($)" name="RESPONSE-BODY"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

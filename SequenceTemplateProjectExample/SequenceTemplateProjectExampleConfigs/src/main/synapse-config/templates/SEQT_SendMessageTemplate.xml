@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="SEQT_SendMessageTemplate" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter defaultValue="" isMandatory="false" name="message_text"/>
+    <parameter defaultValue="" isMandatory="false" name="message_type"/>
+    <parameter defaultValue="" isMandatory="false" name="from"/>
+    <parameter defaultValue="" isMandatory="false" name="to"/>
+    <sequence>
+        <log description="LOG RECIEVED VALUES TO OUR SEQ_T ( FUNCTION ARGUMENTS )" level="custom">
+            <property expression="$func:message_text" name="message_text"/>
+            <property expression="$func:message_type" name="message_type"/>
+            <property expression="$func:from" name="from"/>
+            <property expression="$func:to" name="to"/>
+        </log>
+        <switch source="$func:message_type">
+            <case regex="EMAIL">
+                <log description="LOG START OF EMAIL FLOW" level="custom">
+                    <property name="MESSAGE" value="EMAIL"/>
+                </log>
+                <payloadFactory description="Prepare EMAIL RESPONSE" media-type="json">
+                    <format>{&#xd;
+    "operationStatus" : true,&#xd;
+	"operationStatusMsg" :  "Message Sent Via Email",&#xd;
+    "referenceId" : "$1" &#xd;
+}</format>
+                    <args>
+                        <arg evaluator="xml" expression="get-property('MessageID')"/>
+                    </args>
+                </payloadFactory>
+            </case>
+            <case regex="SMS">
+                <log description="LOG START OF SMS FLOW" level="custom">
+                    <property name="MESSAGE" value="SMS"/>
+                </log>
+                <payloadFactory description="Prepare SMS Response" media-type="json">
+                    <format>{&#xd;
+    "operationStatus" : true,&#xd;
+	"operationStatusMsg" :  "Message Sent Via SMS",&#xd;
+     "referenceId" : "$1" &#xd;
+}</format>
+                    <args>
+                        <arg evaluator="xml" expression="get-property('MessageID')"/>
+                    </args>
+                </payloadFactory>
+            </case>
+            <default>
+                <log category="ERROR" description="LOG MESSAGE TYPE NOT ANY OF THEM" level="custom">
+                    <property name="MESSAGE" value="NON_OFF_THEM"/>
+                </log>
+                <payloadFactory description="Prepare ERROR Response Message" media-type="json">
+                    <format>{&#xd;
+    "operationStatus" : false,&#xd;
+	"operationStatusMsg" :  "Unknwon message_type not in the allowed types [EMAIL,SMS]",&#xd;
+	 "referenceId" : "$1" &#xd;
+}</format>
+                    <args>
+                        <arg evaluator="xml" expression="get-property('MessageID')"/>
+                    </args>
+                </payloadFactory>
+            </default>
+        </switch>
+    </sequence>
+</template>

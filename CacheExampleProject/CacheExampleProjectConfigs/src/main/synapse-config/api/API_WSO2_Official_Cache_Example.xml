@@ -10,7 +10,7 @@
                     <respond/>
                 </onCacheHit>
                 <protocol type="HTTP">
-                    <methods>GET,                     POST</methods>
+                    <methods>GET,                       POST</methods>
                     <headersToExcludeInHash>*</headersToExcludeInHash>
                     <headersToIncludeInHash/>
                     <responseCodes>.*</responseCodes>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="API_Send_Message" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_Send_Message.xml</file>
+    </artifact>
+    <artifact name="API_Send_Message_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_Send_Message_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_Send_Message_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_Send_Message_metadata.yaml</file>
+    </artifact>
+    <artifact name="SEQT_SendMessageTemplate" groupId="com.youssef.gamal.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/SEQT_SendMessageTemplate.xml</file>
+    </artifact>
+</artifacts>

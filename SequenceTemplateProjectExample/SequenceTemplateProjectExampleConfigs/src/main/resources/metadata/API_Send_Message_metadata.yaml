@@ -1,0 +1,11 @@
+---
+key: "API_Send_Message-1.0.0"
+name : "API_Send_Message"
+displayName : "API_Send_Message"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integratione/sequence-template/example"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"
