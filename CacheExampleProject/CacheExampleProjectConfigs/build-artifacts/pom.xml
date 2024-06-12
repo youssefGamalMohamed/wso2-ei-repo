@@ -17,5 +17,8 @@
     <module>api/API_GetAllUsers_With_Caching_1</module>
     <module>metadata/API_GetAllUsers_With_Caching_1_swagger</module>
     <module>metadata/API_GetAllUsers_With_Caching_1_metadata</module>
+    <module>api/API_WSO2_Official_Cache_Example</module>
+    <module>metadata/API_WSO2_Official_Cache_Example_swagger</module>
+    <module>metadata/API_WSO2_Official_Cache_Example_metadata</module>
   </modules>
 </project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/official/docs/example/cache" name="API_WSO2_Official_Cache_Example" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <cache collector="false" timeout="5000">
+                <onCacheHit>
+                    <log description="Response Retrieved From Cache" level="custom">
+                        <property name="MESSAGE" value="VALUE RETRIEVED FROM CACHE"/>
+                    </log>
+                    <respond/>
+                </onCacheHit>
+                <protocol type="HTTP">
+                    <methods>GET,                 POST</methods>
+                    <headersToExcludeInHash>*</headersToExcludeInHash>
+                    <headersToIncludeInHash/>
+                    <responseCodes>.*</responseCodes>
+                    <enableCacheControl>false</enableCacheControl>
+                    <includeAgeHeader>false</includeAgeHeader>
+                    <hashGenerator>org.wso2.carbon.mediator.cache.digest.HttpRequestHashGenerator</hashGenerator>
+                </protocol>
+            </cache>
+            <call>
+                <endpoint>
+                    <address uri="https://jsonplaceholder.typicode.com/users">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>1</progressionFactor>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </address>
+                </endpoint>
+            </call>
+            <property name="RESPONSE" scope="default" type="STRING" value="true"/>
+            <cache collector="true"/>
+            <log description="Response Processed for the First Time" level="full">
+                <property name="RESPONSE-FOR-FIRST-TIME" value="RESPONSE = "/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
