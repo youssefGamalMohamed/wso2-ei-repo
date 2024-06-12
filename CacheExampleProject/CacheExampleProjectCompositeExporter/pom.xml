@@ -14,7 +14,7 @@
   <name>CacheExampleProjectCompositeExporter</name>
   <description>CacheExampleProjectCompositeExporter</description>
   <properties>
-    <com.example.api_._API_GetAllUsers_With_Caching_1>capp/EnterpriseServiceBus</com.example.api_._API_GetAllUsers_With_Caching_1>
+    
     <com.example.metadata_._API_WSO2_Official_Cache_Example_swagger>capp/EnterpriseServiceBus</com.example.metadata_._API_WSO2_Official_Cache_Example_swagger>
     <com.example.metadata_._API_WSO2_Official_Cache_Example_metadata>capp/EnterpriseServiceBus</com.example.metadata_._API_WSO2_Official_Cache_Example_metadata>
     <com.example.metadata_._API_GetAllUsers_With_Caching_1_swagger>capp/EnterpriseServiceBus</com.example.metadata_._API_GetAllUsers_With_Caching_1_swagger>
@@ -23,13 +23,7 @@
     <com.example.metadata_._API_GetAllUsers_With_Caching_1_metadata>capp/EnterpriseServiceBus</com.example.metadata_._API_GetAllUsers_With_Caching_1_metadata>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>com.example.api</groupId>
-      <artifactId>API_GetAllUsers_With_Caching_1</artifactId>
-      <version>1</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
+        <dependency>
       <groupId>com.example.metadata</groupId>
       <artifactId>API_WSO2_Official_Cache_Example_swagger</artifactId>
       <version>1.0.0</version>

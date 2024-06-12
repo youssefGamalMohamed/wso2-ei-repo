@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="API_GetAllUsers_With_Caching_1" groupId="com.example.api" version="1" type="synapse/api" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/api/API_GetAllUsers_With_Caching_1.xml</file>
-    </artifact>
-    <artifact name="API_GetAllUsers_With_Caching_1_swagger" groupId="com.example.metadata" version="1" type="synapse/metadata" serverRole="EnterpriseServiceBus">
-        <file>src/main/resources/metadata/API_GetAllUsers_With_Caching_1_swagger.yaml</file>
-    </artifact>
-    <artifact name="API_GetAllUsers_With_Caching_1_metadata" groupId="com.example.metadata" version="1" type="synapse/metadata" serverRole="EnterpriseServiceBus">
-        <file>src/main/resources/metadata/API_GetAllUsers_With_Caching_1_metadata.yaml</file>
-    </artifact>
     <artifact name="API_WSO2_Official_Cache_Example" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/API_WSO2_Official_Cache_Example.xml</file>
     </artifact>
