@@ -1,0 +1,11 @@
+---
+key: "API_JsonToXml_Conversion-1.0.0"
+name : "API_JsonToXml_Conversion"
+displayName : "API_JsonToXml_Conversion"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integrations/conversions/json-to-xml"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

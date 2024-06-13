@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="Person-Json-Schema" xmlns="http://ws.apache.org/ns/synapse"><![CDATA[{  "$schema": "http://json-schema.org/draft-04/schema#",  "type": "object",  "properties": {    "person": {      "type": "object",      "properties": {        "id": {          "type": "integer"        },        "name": {          "type": "string"        },        "age": {          "type": "integer"        }      },      "required": [        "id",        "name",        "age"      ]    }  },  "required": [    "person"  ]}]]></localEntry>

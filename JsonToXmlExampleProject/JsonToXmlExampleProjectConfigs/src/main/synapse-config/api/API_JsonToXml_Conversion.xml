@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/conversions/json-to-xml" name="API_JsonToXml_Conversion" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <!-- Generate or retrieve MessageID -->
+            <!-- Set Content-Type of the Response to be JSON (application/json) -->
+            <property description="Set Content-Type of the Response to be JSON ( application/json )" name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <!-- Transform XML to JSON -->
+            <jsontransform description="XML To JSON" schema="Person-Json-Schema"/>
+            <!-- Enrich the response with the MessageID -->
+            <!-- <enrich description="Set Reference-ID for the Response">
+                <source clone="true" property="MessageID"/>
+                <target action="child" type="body" property="response"/>
+            </enrich> -->
+            <!-- Log the MessageID -->
+            <log description="LOG MESSAGE-ID" level="custom">
+                <property expression="get-property('MessageID')" name="REFERNECE-ID"/>
+            </log>
+            <!-- Log Json Body and Type of the message -->
+            <log description="Log Json Body and Type of the message" level="custom">
+                <property expression="get-property('messageType')" name="Type"/>
+                <property expression="get-property('ContentType')" name="Content-Type"/>
+                <property expression="json-eval($)" name="BODY"/>
+            </log>
+            <property description="Set ReferenceId Property" expression="get-property('MessageID')" name="ReferenceId" scope="default" type="STRING"/>
+            <log description="LOG MESSAGE-ID" level="custom">
+                <property expression="get-property('ReferenceId')" name="REFERNECE-ID"/>
+            </log>
+            <enrich description="Set ReferenceId to dummy values">
+                <source clone="true" type="inline">{&#xd;
+  "ReferenceId" : 1&#xd;
+}</source>
+                <target action="child" xpath="json-eval($)"/>
+            </enrich>
+            <enrich description="Set ReferenceId to generated MessageID from WSO2 Flow">
+                <source clone="true" property="ReferenceId" type="property"/>
+                <target xpath="json-eval($.ReferenceId)"/>
+            </enrich>
+            <log description="Response Body" level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence>
+            <!-- Log indicating the outSequence execution -->
+            <!-- Respond to the client -->
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
