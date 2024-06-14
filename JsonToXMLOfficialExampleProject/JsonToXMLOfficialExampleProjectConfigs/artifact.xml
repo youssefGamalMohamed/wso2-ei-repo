@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="EngineerEmployeeServiceAPI" groupId="wso2.sampleXmlToJsonMappingTemplate.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/EngineerEmployeeServiceAPI.xml</file>
+    </artifact>
+    <artifact name="EngineerEmployeeServiceAPI_swagger" groupId="wso2.sampleXmlToJsonMappingTemplate.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/EngineerEmployeeServiceAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="EngineerEmployeeServiceAPI_metadata" groupId="wso2.sampleXmlToJsonMappingTemplate.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/EngineerEmployeeServiceAPI_metadata.yaml</file>
+    </artifact>
+</artifacts>

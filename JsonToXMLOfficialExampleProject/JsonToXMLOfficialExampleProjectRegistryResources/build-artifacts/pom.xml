@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>wso2.sampleXmlToJsonMappingTemplate</groupId>
+    <artifactId>JsonToXMLOfficialExampleProjectRegistryResources</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>wso2.sampleXmlToJsonMappingTemplate</groupId>
+  <artifactId>JsonToXMLOfficialExampleProjectRegistryResources_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>JsonToXMLOfficialExampleProjectRegistryResources_module</name>
+  <description>JsonToXMLOfficialExampleProjectRegistryResources_module</description>
+  <modules>
+    <module>resource/EmployeeToEngineerMappingConfig</module>
+    <module>resource/EmployeeToEngineerMappingConfig_inputSchema</module>
+    <module>resource/EmployeeToEngineerMappingConfig_outputSchema</module>
+    <module>resource/EmployeeToEngineerMappingConfig_xsltStyleSheet</module>
+  </modules>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="Person-Xml-XSD-Schema" xmlns="http://ws.apache.org/ns/synapse">
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="person">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="id" type="xs:byte"/>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="age" type="xs:byte"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:schema>
+</localEntry>

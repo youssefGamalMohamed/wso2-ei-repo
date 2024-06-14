@@ -9,6 +9,7 @@
   <name>JsonToXmlExampleProject</name>
   <description>JsonToXmlExampleProject</description>
   <modules>
+    <module>JsonToXMLDataMapper_Resource</module>
     <module>JsonToXmlExampleProjectConfigs</module>
     <module>JsonToXmlExampleProjectCompositeExporter</module>
   </modules>

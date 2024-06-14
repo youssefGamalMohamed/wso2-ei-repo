@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wso2/integrations/json-to-xm/using-data-mapper/example" name="API_JsonToXml_Conversion_Using_DataMapper" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <datamapper config="gov:datamapper/JsonToXMLDataMapper_Config.dmc" description="Convert XML Request to JSON" inputSchema="gov:datamapper/JsonToXMLDataMapper_Config_inputSchema.json" inputType="XML" outputSchema="gov:datamapper/JsonToXMLDataMapper_Config_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/JsonToXMLDataMapper_Config_xsltStyleSheet.xml"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

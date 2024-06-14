@@ -11,4 +11,16 @@
     <artifact name="Person-Json-Schema" groupId="com.youssef.gamal.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/local-entries/Person-Json-Schema.xml</file>
     </artifact>
+    <artifact name="API_JsonToXml_Conversion_Using_DataMapper" groupId="com.youssef.gamal.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/API_JsonToXml_Conversion_Using_DataMapper.xml</file>
+    </artifact>
+    <artifact name="API_JsonToXml_Conversion_Using_DataMapper_swagger" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_JsonToXml_Conversion_Using_DataMapper_swagger.yaml</file>
+    </artifact>
+    <artifact name="API_JsonToXml_Conversion_Using_DataMapper_metadata" groupId="com.youssef.gamal.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/API_JsonToXml_Conversion_Using_DataMapper_metadata.yaml</file>
+    </artifact>
+    <artifact name="Person-Xml-XSD-Schema" groupId="com.youssef.gamal.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/Person-Xml-XSD-Schema.xml</file>
+    </artifact>
 </artifacts>

@@ -18,5 +18,9 @@
     <module>metadata/API_JsonToXml_Conversion_swagger</module>
     <module>metadata/API_JsonToXml_Conversion_metadata</module>
     <module>local-entries/Person-Json-Schema</module>
+    <module>api/API_JsonToXml_Conversion_Using_DataMapper</module>
+    <module>metadata/API_JsonToXml_Conversion_Using_DataMapper_swagger</module>
+    <module>metadata/API_JsonToXml_Conversion_Using_DataMapper_metadata</module>
+    <module>local-entries/Person-Xml-XSD-Schema</module>
   </modules>
 </project>

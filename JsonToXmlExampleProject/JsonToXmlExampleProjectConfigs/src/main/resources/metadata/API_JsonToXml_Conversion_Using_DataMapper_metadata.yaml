@@ -1,0 +1,11 @@
+---
+key: "API_JsonToXml_Conversion_Using_DataMapper-1.0.0"
+name : "API_JsonToXml_Conversion_Using_DataMapper"
+displayName : "API_JsonToXml_Conversion_Using_DataMapper"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/integrations/json-to-xm/using-data-mapper/example"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

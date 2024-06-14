@@ -1,0 +1,23 @@
+openapi: 3.0.1
+info:
+  title: API_JsonToXml_Conversion_Using_DataMapper
+  description: API Definition of API_JsonToXml_Conversion_Using_DataMapper
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/wso2/integrations/json-to-xm/using-data-mapper/example
+paths:
+  /:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response

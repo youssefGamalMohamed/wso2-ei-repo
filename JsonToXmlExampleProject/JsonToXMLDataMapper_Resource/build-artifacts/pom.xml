@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.example</groupId>
+    <artifactId>JsonToXMLDataMapper_Resource</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.example</groupId>
+  <artifactId>JsonToXMLDataMapper_Resource_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>JsonToXMLDataMapper_Resource_module</name>
+  <description>JsonToXMLDataMapper_Resource_module</description>
+  <modules>
+    <module>resource/JsonToXMLDataMapper_Config</module>
+    <module>resource/JsonToXMLDataMapper_Config_inputSchema</module>
+    <module>resource/JsonToXMLDataMapper_Config_outputSchema</module>
+    <module>resource/JsonToXMLDataMapper_Config_xsltStyleSheet</module>
+  </modules>
+</project>

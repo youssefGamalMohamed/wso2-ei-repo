@@ -1,0 +1,12 @@
+map_S_person_S_root = function(){ 
+var outputroot={};
+
+outputroot =  {};
+outputroot.id = inputperson.id;
+outputroot.name = inputperson.name;
+outputroot.age = inputperson.age;
+return outputroot;
+};
+
+
+

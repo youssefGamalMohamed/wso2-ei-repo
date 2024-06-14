@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "inputType" : "XML",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "person",
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "id" : "http://wso2jsonschema.org/id",
+      "type" : "number"
+    },
+    "name" : {
+      "id" : "http://wso2jsonschema.org/name",
+      "type" : "string"
+    },
+    "age" : {
+      "id" : "http://wso2jsonschema.org/age",
+      "type" : "number"
+    }
+  }
+}
