@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.youssef.gamal.consuming_postman_global_soap_apis</groupId>
+    <artifactId>SOAP_PostmanAPIs_To_RESTApisConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.youssef.gamal.consuming_postman_global_soap_apis</groupId>
+  <artifactId>SOAP_PostmanAPIs_To_RESTApisConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>SOAP_PostmanAPIs_To_RESTApisConfigs_module</name>
+  <description>SOAP_PostmanAPIs_To_RESTApisConfigs_module</description>
+  <modules>
+    <module>api/NumbersAPI</module>
+    <module>metadata/NumbersAPI_swagger</module>
+    <module>metadata/NumbersAPI_metadata</module>
+    <module>api/Continents</module>
+    <module>metadata/Continents_swagger</module>
+    <module>metadata/Continents_metadata</module>
+  </modules>
+</project>

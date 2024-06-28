@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-org.eclipse.jdt.core.classpathVariable.ECLIPSE_WORKSPACE=D\:/WorkSpaces/WSO2/workspace
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_WORKSPACE=D\:/WorkSpaces/WSO2/wso2-ei-repo
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=11
 org.eclipse.jdt.core.compiler.compliance=11

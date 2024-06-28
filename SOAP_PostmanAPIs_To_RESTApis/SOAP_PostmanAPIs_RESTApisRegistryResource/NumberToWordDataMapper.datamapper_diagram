@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_Lsd4cDTJEe-4Df9fAR1rAg" type="DataMapper" name="NumberToWordDataMapper.datamapper_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_L2dh8DTJEe-4Df9fAR1rAg" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:Shape" xmi:id="_nWv7QDTWEe-4Df9fAR1rAg" type="3002" fontName="Segoe UI">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nWv7QjTWEe-4Df9fAR1rAg" type="5002"/>
+      <children xmi:type="notation:Shape" xmi:id="_nWxwcDTWEe-4Df9fAR1rAg" type="3003" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_nWyXgDTWEe-4Df9fAR1rAg" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_nW0zwDTWEe-4Df9fAR1rAg" type="3003" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_nW0zwjTWEe-4Df9fAR1rAg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_nW3QADTWEe-4Df9fAR1rAg" type="3003" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_nW3QAjTWEe-4Df9fAR1rAg" type="5001"/>
+            <children xmi:type="notation:Shape" xmi:id="_nW5FMDTWEe-4Df9fAR1rAg" type="3020" fontName="Segoe UI">
+              <element xmi:type="datamapper:InNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0/@node.0/@inNode"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW5FMTTWEe-4Df9fAR1rAg" x="-11" y="-9"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_nW5FMjTWEe-4Df9fAR1rAg" type="3019" fontName="Segoe UI">
+              <element xmi:type="datamapper:OutNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0/@node.0/@outNode"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW5FMzTWEe-4Df9fAR1rAg"/>
+            </children>
+            <element xmi:type="datamapper:TreeNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0/@node.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW3QATTWEe-4Df9fAR1rAg"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_nW33EDTWEe-4Df9fAR1rAg" type="3020" fontName="Segoe UI">
+            <element xmi:type="datamapper:InNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW33ETTWEe-4Df9fAR1rAg" x="-1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_nW33EjTWEe-4Df9fAR1rAg" type="3019" fontName="Segoe UI">
+            <element xmi:type="datamapper:OutNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW33EzTWEe-4Df9fAR1rAg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW0zwTTWEe-4Df9fAR1rAg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nW0zwzTWEe-4Df9fAR1rAg" type="3020" fontName="Segoe UI">
+          <element xmi:type="datamapper:InNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW0zxDTWEe-4Df9fAR1rAg" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nW1a0DTWEe-4Df9fAR1rAg" type="3019" fontName="Segoe UI">
+          <element xmi:type="datamapper:OutNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nW1a0TTWEe-4Df9fAR1rAg"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWxwcTTWEe-4Df9fAR1rAg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_nWyXgTTWEe-4Df9fAR1rAg" type="3020" fontName="Segoe UI">
+        <element xmi:type="datamapper:InNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@inNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWyXgjTWEe-4Df9fAR1rAg" x="-1" y="-11"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_nWyXgzTWEe-4Df9fAR1rAg" type="3019" fontName="Segoe UI">
+        <element xmi:type="datamapper:OutNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@outNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWyXhDTWEe-4Df9fAR1rAg"/>
+      </children>
+      <element xmi:type="datamapper:TreeNode" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWv7QTTWEe-4Df9fAR1rAg"/>
+    </children>
+    <element xmi:type="datamapper:Input" href="NumberToWordDataMapper.datamapper#//@input"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L2dh8TTJEe-4Df9fAR1rAg" x="30" y="30" width="299" height="160"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_L2eJADTJEe-4Df9fAR1rAg" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:Shape" xmi:id="_iTlPQDTJEe-4Df9fAR1rAg" type="3011" fontName="Segoe UI">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iTlPQjTJEe-4Df9fAR1rAg" type="5003"/>
+      <children xmi:type="notation:Shape" xmi:id="_iTw1cDTJEe-4Df9fAR1rAg" type="3003" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_iTw1cjTJEe-4Df9fAR1rAg" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_iT1G4DTJEe-4Df9fAR1rAg" type="3020" fontName="Segoe UI">
+          <element xmi:type="datamapper:InNode" href="NumberToWordDataMapper.datamapper#//@output/@treeNode.0/@node.0/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iT1G4TTJEe-4Df9fAR1rAg" x="-10" y="4"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iT1t8DTJEe-4Df9fAR1rAg" type="3019" fontName="Segoe UI">
+          <element xmi:type="datamapper:OutNode" href="NumberToWordDataMapper.datamapper#//@output/@treeNode.0/@node.0/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iT1t8TTJEe-4Df9fAR1rAg"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="NumberToWordDataMapper.datamapper#//@output/@treeNode.0/@node.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iTw1cTTJEe-4Df9fAR1rAg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_iTxcgDTJEe-4Df9fAR1rAg" type="3020" fontName="Segoe UI">
+        <element xmi:type="datamapper:InNode" href="NumberToWordDataMapper.datamapper#//@output/@treeNode.0/@inNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iTxcgTTJEe-4Df9fAR1rAg" x="-1" y="-11"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_iTxcgjTJEe-4Df9fAR1rAg" type="3019" fontName="Segoe UI">
+        <element xmi:type="datamapper:OutNode" href="NumberToWordDataMapper.datamapper#//@output/@treeNode.0/@outNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iTxcgzTJEe-4Df9fAR1rAg"/>
+      </children>
+      <element xmi:type="datamapper:TreeNode" href="NumberToWordDataMapper.datamapper#//@output/@treeNode.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iTlPQTTJEe-4Df9fAR1rAg"/>
+    </children>
+    <element xmi:type="datamapper:Output" href="NumberToWordDataMapper.datamapper#//@output"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L2eJATTJEe-4Df9fAR1rAg" x="390" y="30" width="250" height="160"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Lsd4cTTJEe-4Df9fAR1rAg"/>
+  <element xmi:type="datamapper:DataMapperRoot" href="NumberToWordDataMapper.datamapper#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_n8CZoDTWEe-4Df9fAR1rAg" type="4001" source="_nW5FMjTWEe-4Df9fAR1rAg" target="_iT1G4DTJEe-4Df9fAR1rAg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_n8CZoTTWEe-4Df9fAR1rAg" fontName="Segoe UI"/>
+    <element xmi:type="datamapper:DataMapperLink" href="NumberToWordDataMapper.datamapper#//@input/@treeNode.0/@node.0/@node.0/@node.0/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n8CZojTWEe-4Df9fAR1rAg" points="[-2, 0, -63, 40]$[59, -40, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n8GEADTWEe-4Df9fAR1rAg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n8GEATTWEe-4Df9fAR1rAg" id="CENTER"/>
+  </edges>
+</notation:Diagram>

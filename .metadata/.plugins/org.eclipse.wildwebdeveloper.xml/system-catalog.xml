@@ -10,5 +10,5 @@
 <system systemId="http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" uri="file:/D:/Programs/WSO2/IntegrationStudio/configuration/org.eclipse.osgi/434/0/.cp/xsd/archetype-descriptor-1.0.0.xsd"/>
 <system systemId="http://www.w3.org/2001/xml.xsd" uri="file:/D:/Programs/WSO2/IntegrationStudio/configuration/org.eclipse.osgi/690/0/.cp/cache/www.w3.org/2001/xml.xsd"/>
 <system systemId="http://ws.apache.org/ns/synapse" uri="file:/D:/Programs/WSO2/IntegrationStudio/configuration/org.eclipse.osgi/773/0/.cp/resources/schema/dss_schema.xsd"/>
-<system systemId="http://ws.apache.org/ns/synapse" uri="file:/D:/Programs/WSO2/IntegrationStudio/configuration/org.eclipse.osgi/788/0/.cp/resources/schema/synapse_config.xsd"/>
+<system systemId="http://ws.apache.org/ns/synapse" uri="file:/D:/Programs/WSO2/IntegrationStudio/configuration/org.eclipse.osgi/849/0/.cp/resources/schema/synapse_config.xsd"/>
 </catalog>

@@ -1,0 +1,8 @@
+map_S_Envelope_S_root = function(){ 
+var outputroot={};
+
+outputroot =  {};
+outputroot.numberToWordResult = inputsoap_Envelope.soap_Body.m_NumberToWordsResponse.m_NumberToWordsResult;
+return outputroot;
+};
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="NumbersAPI" groupId="com.youssef.gamal.consuming_postman_global_soap_apis.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/NumbersAPI.xml</file>
+    </artifact>
+    <artifact name="NumbersAPI_swagger" groupId="com.youssef.gamal.consuming_postman_global_soap_apis.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/NumbersAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="NumbersAPI_metadata" groupId="com.youssef.gamal.consuming_postman_global_soap_apis.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/NumbersAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="Continents" groupId="com.youssef.gamal.consuming_postman_global_soap_apis.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Continents.xml</file>
+    </artifact>
+    <artifact name="Continents_swagger" groupId="com.youssef.gamal.consuming_postman_global_soap_apis.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/Continents_swagger.yaml</file>
+    </artifact>
+    <artifact name="Continents_metadata" groupId="com.youssef.gamal.consuming_postman_global_soap_apis.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/Continents_metadata.yaml</file>
+    </artifact>
+</artifacts>

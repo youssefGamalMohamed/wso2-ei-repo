@@ -1,0 +1,32 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "inputType" : "XML",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "soap:Envelope",
+  "type" : "object",
+  "properties" : {
+    "soap:Body" : {
+      "id" : "http://wso2jsonschema.org/soap:Body",
+      "type" : "object",
+      "properties" : {
+        "m:NumberToWordsResponse" : {
+          "id" : "http://wso2jsonschema.org/soap:Body/m:NumberToWordsResponse",
+          "type" : "object",
+          "properties" : {
+            "m:NumberToWordsResult" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/m:NumberToWordsResponse/m:NumberToWordsResult",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "namespaces" : [ {
+    "prefix" : "soap",
+    "url" : "http://schemas.xmlsoap.org/soap/envelope/"
+  }, {
+    "prefix" : "m",
+    "url" : "http://www.dataaccess.com/webservicesserver/"
+  } ]
+}

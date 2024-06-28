@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/numbers-conversions" name="NumbersAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/numberToword/{number}">
+        <inSequence>
+            <payloadFactory description="prepare soap xml request" media-type="xml">
+                <format>
+                    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+                        <soap:Body>
+                            <NumberToWords xmlns="http://www.dataaccess.com/webservicesserver/">
+                                <ubiNum>$1</ubiNum>
+                            </NumberToWords>
+                        </soap:Body>
+                    </soap:Envelope>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('uri.var.number')"/>
+                </args>
+            </payloadFactory>
+            <log description="log full soap request body before sending it to backend" level="full"/>
+            <property description="set content-type of the message to be soap" name="messageType" scope="axis2" type="STRING" value="application/soap+xml"/>
+            <call>
+                <endpoint>
+                    <http method="post" uri-template="https://www.dataaccess.com/webservicesserver/NumberConversion.wso">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>-1</progressionFactor>
+                            <maximumDuration>0</maximumDuration>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </http>
+                </endpoint>
+            </call>
+            <log description="log response from backend" level="full"/>
+            <property description="set content-type to be application/json" name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/numbers/range?from={from}&amp;to={to}&amp;isGreaterThan={comparing_value}">
+        <inSequence>
+            <log description="log query params" level="custom">
+                <property expression="get-property('uri.var.from')" name="from"/>
+                <property expression="get-property('uri.var.to')" name="to"/>
+                <property expression="get-property('uri.var.comparing_value')" name="comparing_value"/>
+            </log>
+            <script description="script to generate xml body that contains items from [start,end] that sent to url endpoint" language="js"><![CDATA[var start = parseInt(mc.getProperty('uri.var.from'));
+            var end = parseInt(mc.getProperty('uri.var.to'));
+            var log = mc.getServiceLog(); 
+            log.info("Start: " + start);
+            log.info("End: " + end);
+            
+            var generatedXMLStr = '<value><items>';
+            for (var i = start; i <= end; i++) {
+                generatedXMLStr += '<item>' + i + '</item>';
+            }
+            generatedXMLStr += '</items></value>';
+            
+            log.info("Generated XML String: " + generatedXMLStr);
+            
+            mc.setProperty('generatedXMLStr', String(generatedXMLStr));
+            log.info("Property Set: " + mc.getProperty('generatedXMLStr'));]]></script>
+            <log description="log generated xml" level="custom">
+                <property expression="get-property('generatedXMLStr')" name="generatedXMLStr" xmlns:ns="http://org.apache.synapse/xsd"/>
+            </log>
+            <property description="generate static numbers" expression="get-property('generatedXMLStr')" name="itemsXML" scope="default" type="OM"/>
+            <log description="log all xmls" level="custom">
+                <property expression="$ctx:itemsXML" name="numbers"/>
+            </log>
+            <property description="prepare xml to hold all answers" name="answersXML" scope="default">
+                <value xmlns="">
+                    <answers/>
+                </value>
+            </property>
+            <foreach continueLoopOnFailure="true" expression="$ctx:itemsXML//items/*">
+                <sequence>
+                    <log description="log current messaga and i " level="custom">
+                        <property expression="get-property('FOREACH_COUNTER')" name="I = "/>
+                        <property expression="$body/*/text()" name="MSG[I] = "/>
+                    </log>
+                    <filter description="check if the value is greater than 1 or not" xpath="$body/*/text() > 1">
+                        <then>
+                            <log description="log is greater" level="custom">
+                                <property name="msg" value="greater"/>
+                            </log>
+                            <enrich description="> 1">
+                                <source clone="true" type="inline">
+                                    <answer xmlns="">
+                                        <item>#</item>
+                                        <msg>Greater Than 1</msg>
+                                    </answer>
+                                </source>
+                                <target action="child" xpath="$ctx:answersXML//answers"/>
+                            </enrich>
+                        </then>
+                        <else>
+                            <log description="log is less" level="custom">
+                                <property name="msg" value="less"/>
+                            </log>
+                            <enrich description="less than or equal 1">
+                                <source clone="true" type="inline">
+                                    <answer xmlns="">
+                                        <item>#</item>
+                                        <msg>Less Than or Equal 1</msg>
+                                    </answer>
+                                </source>
+                                <target action="child" xpath="$ctx:answersXML//answers"/>
+                            </enrich>
+                        </else>
+                    </filter>
+                    <enrich description="set the item value to the current processed element by the for each">
+                        <source clone="true" xpath="$body/*/text()"/>
+                        <target xpath="$ctx:answersXML//answers//answer[last()]//item/text()"/>
+                    </enrich>
+                    <log description="log answerXML" level="custom">
+                        <property expression="$ctx:answersXML//answers" name="answersXML"/>
+                    </log>
+                </sequence>
+            </foreach>
+            <enrich description="set the message body to the generated xml answers">
+                <source clone="true" xpath="$ctx:answersXML//answers"/>
+                <target type="body"/>
+            </enrich>
+            <property description="set message type to be application/xml" name="messageType" scope="axis2" type="STRING" value="application/xml"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

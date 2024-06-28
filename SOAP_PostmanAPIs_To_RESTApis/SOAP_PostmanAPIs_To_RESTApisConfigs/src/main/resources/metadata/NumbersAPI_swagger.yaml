@@ -1,0 +1,48 @@
+openapi: 3.0.1
+info:
+  title: NumbersAPI
+  description: API Definition of NumbersAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/numbers-conversions
+paths:
+  /numberToword/{number}:
+    get:
+      parameters:
+      - name: number
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: Default response
+  /numbers/range:
+    get:
+      parameters:
+      - name: from
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: to
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: isGreaterThan
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: Default response
