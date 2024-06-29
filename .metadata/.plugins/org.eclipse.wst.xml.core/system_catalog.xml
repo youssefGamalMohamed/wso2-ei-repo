@@ -201,6 +201,6 @@
   <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.eclipse.xsd_2.18.0.v20210924-1719.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
   <system systemId="http://ws.apache.org/ns/synapse" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.wso2.integrationstudio.ds.editor_8.2.0.202402290832.jar!/resources/schema/dss_schema.xsd"/>
   <uri name="http://ws.apache.org/ns/synapse" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.wso2.integrationstudio.ds.editor_8.2.0.202402290832.jar!/resources/schema/dss_schema.xsd"/>
-  <system systemId="http://ws.apache.org/ns/synapse" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.wso2.integrationstudio.gmf.esb.diagram_8.2.0.202402290832.jar!/resources/schema/synapse_config.xsd"/>
-  <uri name="http://ws.apache.org/ns/synapse" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.wso2.integrationstudio.gmf.esb.diagram_8.2.0.202402290832.jar!/resources/schema/synapse_config.xsd"/>
+  <system systemId="http://ws.apache.org/ns/synapse" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.wso2.integrationstudio.gmf.esb.diagram_8.2.0.202405220845.jar!/resources/schema/synapse_config.xsd"/>
+  <uri name="http://ws.apache.org/ns/synapse" uri="jar:file:/D:/Programs/WSO2/IntegrationStudio/plugins/org.wso2.integrationstudio.gmf.esb.diagram_8.2.0.202405220845.jar!/resources/schema/synapse_config.xsd"/>
 </catalog>

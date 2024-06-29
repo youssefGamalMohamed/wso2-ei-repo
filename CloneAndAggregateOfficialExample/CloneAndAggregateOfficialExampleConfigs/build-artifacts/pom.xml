@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>wso2.sampleScatterGatherTemplate</groupId>
+    <artifactId>CloneAndAggregateOfficialExampleConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>wso2.sampleScatterGatherTemplate</groupId>
+  <artifactId>CloneAndAggregateOfficialExampleConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>CloneAndAggregateOfficialExampleConfigs_module</name>
+  <description>CloneAndAggregateOfficialExampleConfigs_module</description>
+  <modules>
+    <module>endpoints/MissionEP1</module>
+    <module>endpoints/MissionEP2</module>
+    <module>endpoints/MissionEP3</module>
+    <module>api/MissionServiceAPI</module>
+    <module>metadata/MissionServiceAPI_swagger</module>
+    <module>metadata/MissionServiceAPI_metadata</module>
+  </modules>
+</project>

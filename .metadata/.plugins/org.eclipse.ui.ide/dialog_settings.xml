@@ -9,4 +9,8 @@
 			<item value="org.wso2.integrationstudio.capp.project/org.wso2.integrationstudio.maven.features"/>
 		</list>
 	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+	</section>
 </section>
