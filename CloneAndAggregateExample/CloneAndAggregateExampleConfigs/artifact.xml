@@ -17,4 +17,13 @@
     <artifact name="TodosWithId1CopyEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/TodosWithId1CopyEP.xml</file>
     </artifact>
+    <artifact name="JsonPlaceHolderIntegrationAPIV2" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/JsonPlaceHolderIntegrationAPIV2.xml</file>
+    </artifact>
+    <artifact name="JsonPlaceHolderIntegrationAPIV2_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/JsonPlaceHolderIntegrationAPIV2_swagger.yaml</file>
+    </artifact>
+    <artifact name="JsonPlaceHolderIntegrationAPIV2_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/JsonPlaceHolderIntegrationAPIV2_metadata.yaml</file>
+    </artifact>
 </artifacts>

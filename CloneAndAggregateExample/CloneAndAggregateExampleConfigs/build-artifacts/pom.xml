@@ -20,5 +20,8 @@
     <module>endpoints/TodosWithId1EP</module>
     <module>endpoints/CommentsWithId1EP</module>
     <module>endpoints/TodosWithId1CopyEP</module>
+    <module>api/JsonPlaceHolderIntegrationAPIV2</module>
+    <module>metadata/JsonPlaceHolderIntegrationAPIV2_swagger</module>
+    <module>metadata/JsonPlaceHolderIntegrationAPIV2_metadata</module>
   </modules>
 </project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/json-placeholder/with-clone-and-aggregate-example/v2" name="JsonPlaceHolderIntegrationAPIV2" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property description="this property must be set to make the aggregation works fine" name="ROOT" scope="default">
+                <aggregationResponse:aggregationResponseElement xmlns:aggregationResponse="www.wso2esb.com"/>
+            </property>
+            <log description="log request" level="full"/>
+            <clone continueParent="true" id="CLONE_AGGREGATE_1234" sequential="true">
+                <target>
+                    <sequence>
+                        <send>
+                            <endpoint>
+                                <address statistics="enable" trace="enable" uri="http://jsonplaceholder.typicode.com/todos/1">
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>-1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </address>
+                            </endpoint>
+                        </send>
+                    </sequence>
+                </target>
+                <target>
+                    <sequence>
+                        <send>
+                            <endpoint>
+                                <address statistics="enable" trace="enable" uri="http://jsonplaceholder.typicode.com/users/1">
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>-1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </address>
+                            </endpoint>
+                        </send>
+                    </sequence>
+                </target>
+            </clone>
+        </inSequence>
+        <outSequence>
+            <aggregate id="CLONE_AGGREGATE_1234">
+                <completeCondition>
+                    <messageCount max="3" min="3"/>
+                </completeCondition>
+                <onComplete aggregateElementType="root" enclosingElementProperty="ROOT" expression="$body/*">
+                    <property description="set content-type" name="messageType" scope="axis2" type="STRING" value="application/json"/>
+                    <send/>
+                </onComplete>
+            </aggregate>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

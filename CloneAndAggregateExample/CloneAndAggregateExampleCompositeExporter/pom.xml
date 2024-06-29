@@ -15,10 +15,13 @@
   <description>CloneAndAggregateExampleCompositeExporter</description>
   <properties>
     <com.example.endpoint_._TodosWithId1CopyEP>capp/EnterpriseServiceBus</com.example.endpoint_._TodosWithId1CopyEP>
+    <com.example.api_._JsonPlaceHolderIntegrationAPIV2>capp/EnterpriseServiceBus</com.example.api_._JsonPlaceHolderIntegrationAPIV2>
     <com.example.metadata_._JsonPlaceHolderIntegrationAPI_metadata>capp/EnterpriseServiceBus</com.example.metadata_._JsonPlaceHolderIntegrationAPI_metadata>
     <com.example.metadata_._JsonPlaceHolderIntegrationAPI_swagger>capp/EnterpriseServiceBus</com.example.metadata_._JsonPlaceHolderIntegrationAPI_swagger>
     <com.example.endpoint_._CommentsWithId1EP>capp/EnterpriseServiceBus</com.example.endpoint_._CommentsWithId1EP>
+    <com.example.metadata_._JsonPlaceHolderIntegrationAPIV2_swagger>capp/EnterpriseServiceBus</com.example.metadata_._JsonPlaceHolderIntegrationAPIV2_swagger>
     <artifact.types>synapse/priority-executor=xml,jaggery/app=zip,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,service/meta=xml,event/stream=json,datasource/datasource=xml,synapse/proxy-service=xml,synapse/sequence=xml,bpel/workflow=zip,synapse/endpointTemplate=xml,carbon/application=car,synapse/api=xml,wso2/gadget=dar,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,synapse/local-entry=xml,synapse/task=xml,event/publisher=xml,synapse/configuration=xml,webapp/jaxws=war,registry/resource=zip,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
+    <com.example.metadata_._JsonPlaceHolderIntegrationAPIV2_metadata>capp/EnterpriseServiceBus</com.example.metadata_._JsonPlaceHolderIntegrationAPIV2_metadata>
     <com.example.api_._JsonPlaceHolderIntegrationAPI>capp/EnterpriseServiceBus</com.example.api_._JsonPlaceHolderIntegrationAPI>
     <com.example.endpoint_._TodosWithId1EP>capp/EnterpriseServiceBus</com.example.endpoint_._TodosWithId1EP>
   </properties>
@@ -26,6 +29,12 @@
     <dependency>
       <groupId>com.example.endpoint</groupId>
       <artifactId>TodosWithId1CopyEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>JsonPlaceHolderIntegrationAPIV2</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -46,6 +55,18 @@
       <artifactId>CommentsWithId1EP</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.metadata</groupId>
+      <artifactId>JsonPlaceHolderIntegrationAPIV2_swagger</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.metadata</groupId>
+      <artifactId>JsonPlaceHolderIntegrationAPIV2_metadata</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
     </dependency>
     <dependency>
       <groupId>com.example.api</groupId>
