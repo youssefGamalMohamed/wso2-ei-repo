@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="JsonMsgPreparerSEQ" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="PLACE" value="INSIDE JSON MSG PREPARER"/>
+    </log>
+    <payloadFactory media-type="json">
+        <format>{&#xd;
+"msg" : "test"&#xd;
+}</format>
+        <args/>
+    </payloadFactory>
+</sequence>

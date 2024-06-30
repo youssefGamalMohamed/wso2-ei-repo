@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/posts/commenst" name="FindPostsWithItsCommentsAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <call>
+                <endpoint key="PostsEP"/>
+            </call>
+            <log description="log all posts" level="custom">
+                <property expression="json-eval($)" name="POSTS = "/>
+            </log>
+            <iterate description="iterate over all posts" expression="json-eval($)" id="ITERATE_OVER_POSTS" sequential="true">
+                <target>
+                    <sequence>
+                        <log description="log current post" level="custom">
+                            <property expression="json-eval($)" name="ITERATOR_CURRENT_POST"/>
+                        </log>
+                        <property description="set id of the endpoint comments/{commentId}" expression="//id" name="posts.postId" scope="default" type="STRING"/>
+                        <log description="log current postId" level="custom">
+                            <property expression="get-property('posts.postId')" name="posts.postId"/>
+                        </log>
+                        <propertyGroup description="prepare dynamic url for calling /posts/{postId}/comments">
+                            <property expression="get-property('posts.postId')" name="IDNumber" scope="default" type="STRING"/>
+                            <property expression="fn:concat('http://jsonplaceholder.typicode.com/posts/',$ctx:IDNumber,'/comments')" name="DSSEPUrl" scope="default" type="STRING"/>
+                            <property expression="$ctx:DSSEPUrl" name="uri.var.service.url" scope="default" type="STRING"/>
+                        </propertyGroup>
+                        <log description="log the {uri.var.service.url}" level="custom">
+                            <property expression="get-property('uri.var.service.url')" name="BACKEND_URI"/>
+                        </log>
+                        <send>
+                            <endpoint>
+                                <http method="get" statistics="enable" trace="enable" uri-template="{uri.var.service.url}">
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>1</progressionFactor>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </http>
+                                <description>we will call the backend url dynmaically</description>
+                            </endpoint>
+                        </send>
+                    </sequence>
+                </target>
+            </iterate>
+        </inSequence>
+        <outSequence>
+            <log description="log current comments" level="custom">
+                <property expression="json-eval($)" name="CURRENT_COMMENTS"/>
+            </log>
+            <aggregate id="ITERATE_OVER_POSTS">
+                <completeCondition>
+                    <messageCount max="-1" min="-1"/>
+                </completeCondition>
+                <onComplete aggregateElementType="root" expression="json-eval($)">
+                    <payloadFactory description="prepare response" media-type="json">
+                        <format>{&#xd;
+"comments" : $1&#xd;
+}</format>
+                        <args>
+                            <arg evaluator="json" expression="$"/>
+                        </args>
+                    </payloadFactory>
+                    <send/>
+                </onComplete>
+            </aggregate>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

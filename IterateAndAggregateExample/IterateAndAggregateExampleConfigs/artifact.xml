@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="FindPostsWithItsCommentsAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/FindPostsWithItsCommentsAPI.xml</file>
+    </artifact>
+    <artifact name="FindPostsWithItsCommentsAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/FindPostsWithItsCommentsAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="FindPostsWithItsCommentsAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/FindPostsWithItsCommentsAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="PostsEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PostsEP.xml</file>
+    </artifact>
+    <artifact name="CommentsEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CommentsEP.xml</file>
+    </artifact>
+    <artifact name="PostsComments" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PostsComments.xml</file>
+    </artifact>
+</artifacts>

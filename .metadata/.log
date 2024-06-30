@@ -6015,3 +6015,1048 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-29 19:20:57.022
 !MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-29 22:15:43.319
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1736)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1728)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.wso2.tools.eclipse.platform.core 4 0 2024-06-29 22:46:45.501
+!MESSAGE An unexpected error has occurred
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4907)
+	at org.eclipse.swt.SWT.error(SWT.java:4822)
+	at org.eclipse.swt.SWT.error(SWT.java:4793)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:445)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:364)
+	at org.eclipse.swt.widgets.Text.getText(Text.java:1436)
+	at org.wso2.integrationstudio.platform.ui.utils.WSO2UIToolkit$4.getData(WSO2UIToolkit.java:451)
+	at org.wso2.integrationstudio.platform.ui.wizard.pages.ProjectOptionsDataPage$22.validate(ProjectOptionsDataPage.java:1141)
+	at org.wso2.integrationstudio.platform.ui.wizard.pages.ProjectOptionsDataPage.doFieldValidation(ProjectOptionsDataPage.java:1470)
+	at org.wso2.integrationstudio.platform.ui.wizard.pages.ProjectOptionsDataPage.doPostFieldModificationAction(ProjectOptionsDataPage.java:1537)
+	at org.wso2.integrationstudio.platform.ui.wizard.pages.ProjectOptionsDataPage$23$1.run(ProjectOptionsDataPage.java:1179)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.wso2.integrationstudio.maven.multi.module 4 0 2024-06-29 22:46:51.257
+!MESSAGE Error while parsing the xml file.
+
+!ENTRY org.wso2.integrationstudio.distribution.project 2 0 2024-06-29 22:47:01.454
+!MESSAGE org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not L (position: START_DOCUMENT seen L... @1:1) 
+!STACK 0
+java.lang.Exception: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not L (position: START_DOCUMENT seen L... @1:1) 
+	at org.wso2.integrationstudio.logging.internal.impl.IntegrationStudioLog.warn(IntegrationStudioLog.java:156)
+	at org.wso2.integrationstudio.distribution.project.util.POMDescriber.describe(POMDescriber.java:42)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.describe(ContentTypeCatalog.java:255)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.collectMatchingByContents(ContentTypeCatalog.java:226)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.internalFindContentTypesFor(ContentTypeCatalog.java:438)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.internalFindContentTypesFor(ContentTypeCatalog.java:499)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.findContentTypesFor(ContentTypeCatalog.java:333)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.findContentTypeFor(ContentTypeMatcher.java:42)
+	at org.eclipse.wst.sse.core.internal.modelhandler.ModelHandlerRegistry.getHandlerFor(ModelHandlerRegistry.java:232)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.calculateType(ModelManagerImpl.java:752)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForEdit(ModelManagerImpl.java:1429)
+	at org.eclipse.wst.sse.ui.internal.StorageModelProvider.loadModel(StorageModelProvider.java:735)
+	at org.eclipse.wst.sse.ui.internal.StorageModelProvider.loadModel(StorageModelProvider.java:707)
+	at org.eclipse.wst.sse.ui.internal.StorageModelProvider.selfCreateModel(StorageModelProvider.java:763)
+	at org.eclipse.wst.sse.ui.internal.StorageModelProvider.createModelInfo(StorageModelProvider.java:480)
+	at org.eclipse.wst.sse.ui.internal.StorageModelProvider.createElementInfo(StorageModelProvider.java:471)
+	at org.eclipse.ui.texteditor.AbstractDocumentProvider.connect(AbstractDocumentProvider.java:395)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4178)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1479)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:153)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor.doSetInput(StructuredTextEditor.java:2037)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3168)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:434)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$7(WorkbenchWindow.java:2345)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2343)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3185)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3210)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor.init(StructuredTextEditor.java:2739)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:224)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:331)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:203)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:313)
+	at org.eclipse.m2e.editor.xml.pomeditor.MavenStructuredPomEditorPageFactory.addPages(MavenStructuredPomEditorPageFactory.java:30)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addEditorPageExtensions(MavenPomEditor.java:415)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addPages(MavenPomEditor.java:329)
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:143)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:333)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at jdk.internal.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4779)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:660)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:624)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:787)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1261)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3208)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3112)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3110)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3080)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3071)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:569)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:524)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:367)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:172)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:53)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:183)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:454)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not L (position: START_DOCUMENT seen L... @1:1) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1865)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1700)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1319)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3876)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:609)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:638)
+	at org.wso2.integrationstudio.maven.util.MavenUtils.getMavenProject(MavenUtils.java:63)
+	at org.wso2.integrationstudio.distribution.project.util.POMDescriber.describe(POMDescriber.java:37)
+	... 138 more
+
+!ENTRY org.eclipse.jface.text 4 0 2024-06-29 22:47:03.560
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1081)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:479)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1072)
+	... 6 more
+
+!ENTRY org.eclipse.jface.text 4 0 2024-06-29 22:47:03.561
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1081)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:479)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1072)
+	... 6 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-29 22:47:09.113
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1736)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1728)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-29 23:00:02.894
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-29 23:02:27.345
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.ui 4 4 2024-06-29 23:02:37.195
+!MESSAGE Plug-in 'org.eclipse.gmf.runtime.diagram.ui.providers' contributed an invalid Menu Extension (Path: 'editMenu' is invalid): org.eclipse.gmf.runtime.diagram.ui.actions.internal.DuplicateActionDelegate
+
+!ENTRY org.eclipse.ui 4 4 2024-06-29 23:02:38.996
+!MESSAGE Plug-in 'org.eclipse.gmf.runtime.diagram.ui.providers' contributed an invalid Menu Extension (Path: 'editMenu' is invalid): org.eclipse.gmf.runtime.diagram.ui.actions.internal.DuplicateActionDelegate
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-29 23:06:39.721
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-29 23:17:04.044
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.ui 4 4 2024-06-29 23:22:16.992
+!MESSAGE Plug-in 'org.eclipse.gmf.runtime.diagram.ui.providers' contributed an invalid Menu Extension (Path: 'editMenu' is invalid): org.eclipse.gmf.runtime.diagram.ui.actions.internal.DuplicateActionDelegate
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:23:22.191
+!MESSAGE Socket created for command channel : localhost:9005
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:23:22.196
+!MESSAGE Socket created for event channel : localhost:9006
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:23:22.197
+!MESSAGE Event Dispatcher Started
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:23:22.198
+!MESSAGE Response Dispatcher Started
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:25.254
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:25.336
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:25.343
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:25.443
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:27.396
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:27.653
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:27.697
+!MESSAGE already breakpoint disabled at mediator position
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:23:27.795
+!MESSAGE already breakpoint disabled at mediator position
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:25:10.599
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:25:10.601
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:25:10.602
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-29 23:25:10.840
+!MESSAGE Error occured during reading response message sent from ESB Server Debugger
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:185)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at org.wso2.integrationstudio.gmf.esb.diagram.debugger.channel.dispatcher.ChannelResponseDispatcher.run(ChannelResponseDispatcher.java:50)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:25:12.797
+!MESSAGE Sending terminate request to debug target
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:25:12.797
+!MESSAGE Event dispatcher stopped
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:25:12.798
+!MESSAGE Response dispatcher stopped
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:25:12.799
+!MESSAGE Request socket closed
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:25:12.799
+!MESSAGE Event socket closed
+
+!ENTRY org.eclipse.ui 4 4 2024-06-29 23:27:08.933
+!MESSAGE Plug-in 'org.eclipse.gmf.runtime.diagram.ui.providers' contributed an invalid Menu Extension (Path: 'editMenu' is invalid): org.eclipse.gmf.runtime.diagram.ui.actions.internal.DuplicateActionDelegate
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-29 23:37:32.924
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-29 23:38:11.640
+!MESSAGE Error while saving swagger file
+!STACK 0
+org.apache.synapse.SynapseException: Unable to load the aggregating XPATH
+	at org.apache.synapse.config.xml.AbstractMediatorFactory.handleException(AbstractMediatorFactory.java:212)
+	at org.apache.synapse.config.xml.AggregateMediatorFactory.createSpecificMediator(AggregateMediatorFactory.java:139)
+	at org.apache.synapse.config.xml.AbstractMediatorFactory.createMediator(AbstractMediatorFactory.java:98)
+	at org.apache.synapse.config.xml.MediatorFactoryFinder.getMediator(MediatorFactoryFinder.java:229)
+	at org.apache.synapse.config.xml.AbstractListMediatorFactory.addChildren(AbstractListMediatorFactory.java:46)
+	at org.apache.synapse.config.xml.SequenceMediatorFactory.createAnonymousSequence(SequenceMediatorFactory.java:70)
+	at org.apache.synapse.config.xml.rest.ResourceFactory.configureSequences(ResourceFactory.java:119)
+	at org.apache.synapse.config.xml.rest.ResourceFactory.createResource(ResourceFactory.java:50)
+	at org.apache.synapse.config.xml.rest.APIFactory.createAPI(APIFactory.java:94)
+	at org.apache.synapse.config.xml.rest.APIFactory.createAPI(APIFactory.java:54)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor.doSaveSwaggerSources(EsbMultiPageEditor.java:1414)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor$10.run(EsbMultiPageEditor.java:1386)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.apache.axiom.om.xpath.AXIOMXPath.<init>(AXIOMXPath.java:49)
+	at org.apache.synapse.config.xml.SynapsePath.<init>(SynapsePath.java:53)
+	at org.apache.synapse.util.xpath.SynapseXPath.<init>(SynapseXPath.java:159)
+	at org.apache.synapse.config.xml.SynapsePathFactory.getSynapsePath(SynapsePathFactory.java:54)
+	at org.apache.synapse.config.xml.AggregateMediatorFactory.createSpecificMediator(AggregateMediatorFactory.java:137)
+	... 35 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: : 0: Unexpected ''
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:190)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:100)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 41 more
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-29 23:38:29.033
+!MESSAGE Error while saving swagger file
+!STACK 0
+org.apache.synapse.SynapseException: Unable to load the aggregating XPATH
+	at org.apache.synapse.config.xml.AbstractMediatorFactory.handleException(AbstractMediatorFactory.java:212)
+	at org.apache.synapse.config.xml.AggregateMediatorFactory.createSpecificMediator(AggregateMediatorFactory.java:139)
+	at org.apache.synapse.config.xml.AbstractMediatorFactory.createMediator(AbstractMediatorFactory.java:98)
+	at org.apache.synapse.config.xml.MediatorFactoryFinder.getMediator(MediatorFactoryFinder.java:229)
+	at org.apache.synapse.config.xml.AbstractListMediatorFactory.addChildren(AbstractListMediatorFactory.java:46)
+	at org.apache.synapse.config.xml.SequenceMediatorFactory.createAnonymousSequence(SequenceMediatorFactory.java:70)
+	at org.apache.synapse.config.xml.rest.ResourceFactory.configureSequences(ResourceFactory.java:119)
+	at org.apache.synapse.config.xml.rest.ResourceFactory.createResource(ResourceFactory.java:50)
+	at org.apache.synapse.config.xml.rest.APIFactory.createAPI(APIFactory.java:94)
+	at org.apache.synapse.config.xml.rest.APIFactory.createAPI(APIFactory.java:54)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor.doSaveSwaggerSources(EsbMultiPageEditor.java:1414)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor$10.run(EsbMultiPageEditor.java:1386)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.apache.axiom.om.xpath.AXIOMXPath.<init>(AXIOMXPath.java:49)
+	at org.apache.synapse.config.xml.SynapsePath.<init>(SynapsePath.java:53)
+	at org.apache.synapse.util.xpath.SynapseXPath.<init>(SynapseXPath.java:159)
+	at org.apache.synapse.config.xml.SynapsePathFactory.getSynapsePath(SynapsePathFactory.java:54)
+	at org.apache.synapse.config.xml.AggregateMediatorFactory.createSpecificMediator(AggregateMediatorFactory.java:137)
+	... 35 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: : 0: Unexpected ''
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:190)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:100)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 41 more
+
+!ENTRY org.eclipse.ui 4 4 2024-06-29 23:41:34.372
+!MESSAGE Plug-in 'org.eclipse.gmf.runtime.diagram.ui.providers' contributed an invalid Menu Extension (Path: 'editMenu' is invalid): org.eclipse.gmf.runtime.diagram.ui.actions.internal.DuplicateActionDelegate
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:42:26.593
+!MESSAGE Socket created for command channel : localhost:9005
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:42:26.606
+!MESSAGE Socket created for event channel : localhost:9006
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:42:26.607
+!MESSAGE Event Dispatcher Started
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-29 23:42:26.609
+!MESSAGE Response Dispatcher Started
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:29.670
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:29.756
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:29.757
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:29.856
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:29.857
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:29.987
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:31.918
+!MESSAGE already breakpoint disabled at mediator position
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-29 23:42:32.314
+!MESSAGE already breakpoint disabled at mediator position
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 00:40:47.691
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 00:40:47.838
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 00:40:52.255
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 00:40:52.525
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:47:11.708
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:47:11.710
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:47:11.710
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 00:47:12.035
+!MESSAGE Error occured during reading response message sent from ESB Server Debugger
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:185)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at org.wso2.integrationstudio.gmf.esb.diagram.debugger.channel.dispatcher.ChannelResponseDispatcher.run(ChannelResponseDispatcher.java:50)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:47:13.900
+!MESSAGE Sending terminate request to debug target
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:47:13.902
+!MESSAGE Event dispatcher stopped
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:47:13.903
+!MESSAGE Response dispatcher stopped
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:47:13.904
+!MESSAGE Request socket closed
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:47:13.905
+!MESSAGE Event socket closed
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:50:12.188
+!MESSAGE Socket created for command channel : localhost:9005
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:50:12.199
+!MESSAGE Socket created for event channel : localhost:9006
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:50:12.200
+!MESSAGE Event Dispatcher Started
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:50:12.202
+!MESSAGE Response Dispatcher Started
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:18.571
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:18.918
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:18.983
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:19.095
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:19.096
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:19.202
+!MESSAGE api not found
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:19.203
+!MESSAGE already breakpoint disabled at mediator position
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 2 0 2024-06-30 00:50:19.335
+!MESSAGE already breakpoint disabled at mediator position
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 00:52:49.747
+!MESSAGE Error occured during reading response message sent from ESB Server Debugger
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:185)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at org.wso2.integrationstudio.gmf.esb.diagram.debugger.channel.dispatcher.ChannelResponseDispatcher.run(ChannelResponseDispatcher.java:50)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 00:52:49.748
+!MESSAGE Error occured during reading event message sent from ESB Server Debugger
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:185)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at org.wso2.integrationstudio.gmf.esb.diagram.debugger.channel.dispatcher.ChannelEventDispatcher.run(ChannelEventDispatcher.java:49)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:53:17.767
+!MESSAGE Sending terminate request to debug target
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:53:17.768
+!MESSAGE Event dispatcher stopped
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:53:17.768
+!MESSAGE Response dispatcher stopped
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:53:17.768
+!MESSAGE Request socket closed
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 1 0 2024-06-30 00:53:17.769
+!MESSAGE Event socket closed
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 01:03:43.589
+!MESSAGE Error while saving the diagram
+!STACK 0
+org.wso2.integrationstudio.gmf.esb.persistence.TransformerException: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:59)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.PropertyMediatorTransformer.transform(PropertyMediatorTransformer.java:66)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.createIterateMediator(IterateMediatorTransformer.java:147)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.transform(IterateMediatorTransformer.java:43)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.CallMediatorTransformer.transform(CallMediatorTransformer.java:73)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APIResourceTransformer.transform(APIResourceTransformer.java:181)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APITransformer.transform(APITransformer.java:75)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.transformAPI(DefaultEsbModelExporter.java:333)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.designToSource(DefaultEsbModelExporter.java:516)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor.updateAssociatedXMLFile(EsbMultiPageEditor.java:1077)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor$10.run(EsbMultiPageEditor.java:1323)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.apache.axiom.om.xpath.AXIOMXPath.<init>(AXIOMXPath.java:49)
+	at org.apache.synapse.config.xml.SynapsePath.<init>(SynapsePath.java:53)
+	at org.apache.synapse.util.xpath.SynapseXPath.<init>(SynapseXPath.java:159)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.custom.CustomSynapsePathFactory.getSynapsePath(CustomSynapsePathFactory.java:97)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.createLogMediator(LogMediatorTransformer.java:141)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:55)
+	... 43 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: get-property('posts.postId): 27: Unexpected ''
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:190)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.arguments(XPathReader.java:238)
+	at org.jaxen.saxpath.base.XPathReader.functionCall(XPathReader.java:227)
+	at org.jaxen.saxpath.base.XPathReader.filterExpr(XPathReader.java:279)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:161)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:100)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 50 more
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 01:03:45.112
+!MESSAGE Error while getting current source from the esb diagram editor : 
+!STACK 0
+org.wso2.integrationstudio.gmf.esb.persistence.TransformerException: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:59)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.PropertyMediatorTransformer.transform(PropertyMediatorTransformer.java:66)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.createIterateMediator(IterateMediatorTransformer.java:147)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.transform(IterateMediatorTransformer.java:43)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.CallMediatorTransformer.transform(CallMediatorTransformer.java:73)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APIResourceTransformer.transform(APIResourceTransformer.java:181)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APITransformer.transform(APITransformer.java:75)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.transformAPI(DefaultEsbModelExporter.java:333)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.designToSource(DefaultEsbModelExporter.java:516)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor.doSaveSwaggerSources(EsbMultiPageEditor.java:1400)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor$10.run(EsbMultiPageEditor.java:1386)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.apache.axiom.om.xpath.AXIOMXPath.<init>(AXIOMXPath.java:49)
+	at org.apache.synapse.config.xml.SynapsePath.<init>(SynapsePath.java:53)
+	at org.apache.synapse.util.xpath.SynapseXPath.<init>(SynapseXPath.java:159)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.custom.CustomSynapsePathFactory.getSynapsePath(CustomSynapsePathFactory.java:97)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.createLogMediator(LogMediatorTransformer.java:141)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:55)
+	... 43 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: get-property('posts.postId): 27: Unexpected ''
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:190)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.arguments(XPathReader.java:238)
+	at org.jaxen.saxpath.base.XPathReader.functionCall(XPathReader.java:227)
+	at org.jaxen.saxpath.base.XPathReader.filterExpr(XPathReader.java:279)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:161)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:100)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 50 more
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 01:03:47.228
+!MESSAGE Error while saving the diagram
+!STACK 0
+org.wso2.integrationstudio.gmf.esb.persistence.TransformerException: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:59)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.PropertyMediatorTransformer.transform(PropertyMediatorTransformer.java:66)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.createIterateMediator(IterateMediatorTransformer.java:147)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.transform(IterateMediatorTransformer.java:43)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.CallMediatorTransformer.transform(CallMediatorTransformer.java:73)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APIResourceTransformer.transform(APIResourceTransformer.java:181)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APITransformer.transform(APITransformer.java:75)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.transformAPI(DefaultEsbModelExporter.java:333)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.designToSource(DefaultEsbModelExporter.java:516)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor.updateAssociatedXMLFile(EsbMultiPageEditor.java:1077)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor$10.run(EsbMultiPageEditor.java:1323)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.apache.axiom.om.xpath.AXIOMXPath.<init>(AXIOMXPath.java:49)
+	at org.apache.synapse.config.xml.SynapsePath.<init>(SynapsePath.java:53)
+	at org.apache.synapse.util.xpath.SynapseXPath.<init>(SynapseXPath.java:159)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.custom.CustomSynapsePathFactory.getSynapsePath(CustomSynapsePathFactory.java:97)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.createLogMediator(LogMediatorTransformer.java:141)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:55)
+	... 43 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: get-property('posts.postId): 27: Unexpected ''
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:190)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.arguments(XPathReader.java:238)
+	at org.jaxen.saxpath.base.XPathReader.functionCall(XPathReader.java:227)
+	at org.jaxen.saxpath.base.XPathReader.filterExpr(XPathReader.java:279)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:161)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:100)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 50 more
+
+!ENTRY org.wso2.integrationstudio.gmf.esb.diagram 4 0 2024-06-30 01:03:48.821
+!MESSAGE Error while getting current source from the esb diagram editor : 
+!STACK 0
+org.wso2.integrationstudio.gmf.esb.persistence.TransformerException: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:59)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.PropertyMediatorTransformer.transform(PropertyMediatorTransformer.java:66)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.createIterateMediator(IterateMediatorTransformer.java:147)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.IterateMediatorTransformer.transform(IterateMediatorTransformer.java:43)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:57)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.CallMediatorTransformer.transform(CallMediatorTransformer.java:73)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APIResourceTransformer.transform(APIResourceTransformer.java:181)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.APITransformer.transform(APITransformer.java:75)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.transformAPI(DefaultEsbModelExporter.java:333)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.DefaultEsbModelExporter.designToSource(DefaultEsbModelExporter.java:516)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor.doSaveSwaggerSources(EsbMultiPageEditor.java:1400)
+	at org.wso2.integrationstudio.gmf.esb.diagram.part.EsbMultiPageEditor$10.run(EsbMultiPageEditor.java:1386)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ''
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.apache.axiom.om.xpath.AXIOMXPath.<init>(AXIOMXPath.java:49)
+	at org.apache.synapse.config.xml.SynapsePath.<init>(SynapsePath.java:53)
+	at org.apache.synapse.util.xpath.SynapseXPath.<init>(SynapseXPath.java:159)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.custom.CustomSynapsePathFactory.getSynapsePath(CustomSynapsePathFactory.java:97)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.createLogMediator(LogMediatorTransformer.java:141)
+	at org.wso2.integrationstudio.gmf.esb.internal.persistence.LogMediatorTransformer.transform(LogMediatorTransformer.java:55)
+	... 43 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: get-property('posts.postId): 27: Unexpected ''
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:190)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.arguments(XPathReader.java:238)
+	at org.jaxen.saxpath.base.XPathReader.functionCall(XPathReader.java:227)
+	at org.jaxen.saxpath.base.XPathReader.filterExpr(XPathReader.java:279)
+	at org.jaxen.saxpath.base.XPathReader.pathExpr(XPathReader.java:161)
+	at org.jaxen.saxpath.base.XPathReader.unionExpr(XPathReader.java:1007)
+	at org.jaxen.saxpath.base.XPathReader.unaryExpr(XPathReader.java:995)
+	at org.jaxen.saxpath.base.XPathReader.multiplicativeExpr(XPathReader.java:943)
+	at org.jaxen.saxpath.base.XPathReader.additiveExpr(XPathReader.java:913)
+	at org.jaxen.saxpath.base.XPathReader.relationalExpr(XPathReader.java:860)
+	at org.jaxen.saxpath.base.XPathReader.equalityExpr(XPathReader.java:829)
+	at org.jaxen.saxpath.base.XPathReader.andExpr(XPathReader.java:809)
+	at org.jaxen.saxpath.base.XPathReader.orExpr(XPathReader.java:787)
+	at org.jaxen.saxpath.base.XPathReader.expr(XPathReader.java:780)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:100)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 50 more
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 01:13:11.736
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 01:13:11.902
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 02:33:20.920
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2024-06-30 02:33:21.116
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
