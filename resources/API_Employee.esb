@@ -12,7 +12,7 @@
         <container>
           <sequenceAndEndpointContainer>
             <mediatorFlow>
-              <children xsi:type="esb:DBLookupMediator" description="Find Employee By ID" connectionDbType="MYSQL" connectionDbDriver="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/employee_db" connectionUsername="root" connectionPassword="1234">
+              <children xsi:type="esb:DBLookupMediator" description="Find Employee By ID" connectionDbType="MYSQL" connectionDbDriver="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/employee_db?useSSL=false" connectionUsername="root" connectionPassword="1234">
                 <sqlStatements queryString="SELECT id,name,age,salary FROM employees WHERE id = ?">
                   <parameters dataType="INTEGER" valueLiteral="default">
                     <valueExpression propertyValue="$url:id" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>

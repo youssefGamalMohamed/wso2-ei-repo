@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/employees" name="EmployeeAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log description="log request body" level="custom">
+                <property expression="json-eval($)" name="request-body"/>
+            </log>
+            <log description="log properties before sql" level="custom">
+                <property expression="//id" name="id"/>
+                <property expression="//name" name="name"/>
+                <property expression="//age" name="age"/>
+                <property expression="//salary" name="salary"/>
+            </log>
+            <dbreport description="insert employee to db">
+                <connection>
+                    <pool>
+                        <driver>com.mysql.cj.jdbc.Driver</driver>
+                        <url>jdbc:mysql://localhost:3306/employee_db?useSSL=false</url>
+                        <user>root</user>
+                        <password>1234</password>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql><![CDATA[INSERT INTO employees VALUES (?, ?, ?, ?)]]></sql>
+                    <parameter expression="//id" type="INTEGER"/>
+                    <parameter expression="//name" type="VARCHAR"/>
+                    <parameter expression="//age" type="INTEGER"/>
+                    <parameter expression="//salary" type="DOUBLE"/>
+                </statement>
+            </dbreport>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

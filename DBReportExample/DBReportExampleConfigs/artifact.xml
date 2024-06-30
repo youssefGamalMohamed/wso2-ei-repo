@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="EmpolyeeAPI" groupId="com.youssef.gamal.dpreport.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/EmpolyeeAPI.xml</file>
+    </artifact>
+    <artifact name="EmpolyeeAPI_swagger" groupId="com.youssef.gamal.dpreport.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/EmpolyeeAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="EmpolyeeAPI_metadata" groupId="com.youssef.gamal.dpreport.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/EmpolyeeAPI_metadata.yaml</file>
+    </artifact>
+</artifacts>

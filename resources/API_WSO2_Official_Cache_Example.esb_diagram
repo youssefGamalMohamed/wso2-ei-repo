@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_-hS64DZ5Ee-KK-xslCIq3w" type="Esb" name="API_WSO2_Official_Cache_Example" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_-h1tcDZ5Ee-KK-xslCIq3w" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-h1tdTZ5Ee-KK-xslCIq3w" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_-uBvUDZ5Ee-KK-xslCIq3w" type="3668" fontName="Segoe UI">
+        <children xmi:type="notation:BasicCompartment" xmi:id="_-uBvUjZ5Ee-KK-xslCIq3w" type="7044">
+          <children xmi:type="notation:Node" xmi:id="_-uJEEDZ5Ee-KK-xslCIq3w" type="3669">
+            <children xmi:type="notation:Node" xmi:id="_-uMHYDZ5Ee-KK-xslCIq3w" type="3670">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uMHYTZ5Ee-KK-xslCIq3w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_-uMHYjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_-uMHYzZ5Ee-KK-xslCIq3w"/>
+              <element xmi:type="esb:APIResourceInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@inputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uMHZDZ5Ee-KK-xslCIq3w" x="86" y="-11"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-uMHZTZ5Ee-KK-xslCIq3w" type="3671">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uMHZjZ5Ee-KK-xslCIq3w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_-uMHZzZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_-uMHaDZ5Ee-KK-xslCIq3w"/>
+              <element xmi:type="esb:APIResourceOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@outputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uMHaTZ5Ee-KK-xslCIq3w" x="86" y="-23"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-uMHajZ5Ee-KK-xslCIq3w" type="3730">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uMHazZ5Ee-KK-xslCIq3w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_-uMHbDZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_-uMHbTZ5Ee-KK-xslCIq3w"/>
+              <element xmi:type="esb:APIResourceOutSequenceOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@outSequenceOutputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uMHbjZ5Ee-KK-xslCIq3w" x="110" y="-11"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-uMHbzZ5Ee-KK-xslCIq3w" type="3672">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uMHcDZ5Ee-KK-xslCIq3w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_-uMHcTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_-uMHcjZ5Ee-KK-xslCIq3w"/>
+              <element xmi:type="esb:APIResourceFaultInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@faultInputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uMHczZ5Ee-KK-xslCIq3w" x="86" y="7"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-uMHdDZ5Ee-KK-xslCIq3w" type="3673">
+              <children xmi:type="notation:Node" xmi:id="_-uPxwDZ5Ee-KK-xslCIq3w" type="3487">
+                <children xmi:type="notation:Node" xmi:id="_-uQ_4DZ5Ee-KK-xslCIq3w" type="3608">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_-uQ_5TZ5Ee-KK-xslCIq3w" type="7034">
+                    <children xmi:type="notation:Node" xmi:id="_-ugQcDZ5Ee-KK-xslCIq3w" type="3518">
+                      <children xmi:type="notation:Node" xmi:id="_-uoMQDZ5Ee-KK-xslCIq3w" type="3106">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uoMQTZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-uoMQjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-uoMQzZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CacheMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uoMRDZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-uoMRTZ5Ee-KK-xslCIq3w" type="3107">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uoMRjZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-uoMRzZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-uoMSDZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CacheMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uoMSTZ5Ee-KK-xslCIq3w" x="-11" y="-9"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-uoMSjZ5Ee-KK-xslCIq3w" type="3618">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uoMSzZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-uoMTDZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-uoMTTZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CacheMediatorOnHitOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@onHitOutputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uoMTjZ5Ee-KK-xslCIq3w" x="80" y="-9"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-uozUDZ5Ee-KK-xslCIq3w" type="3619">
+                        <children xmi:type="notation:DecorationNode" xmi:id="_-uozVTZ5Ee-KK-xslCIq3w" type="7036">
+                          <children xmi:type="notation:Node" xmi:id="_-vH7gDZ5Ee-KK-xslCIq3w" type="3495">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_-vH7hTZ5Ee-KK-xslCIq3w" type="5168"/>
+                            <children xmi:type="notation:Node" xmi:id="_-vLl4DZ5Ee-KK-xslCIq3w" type="3018">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vLl4TZ5Ee-KK-xslCIq3w"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_-vLl4jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_-vLl4zZ5Ee-KK-xslCIq3w"/>
+                              <element xmi:type="esb:LogMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.0/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vLl5DZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_-vLl5TZ5Ee-KK-xslCIq3w" type="3019">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vLl5jZ5Ee-KK-xslCIq3w"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_-vLl5zZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_-vLl6DZ5Ee-KK-xslCIq3w"/>
+                              <element xmi:type="esb:LogMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.0/@outputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vLl6TZ5Ee-KK-xslCIq3w" x="64" y="-9"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vH7gTZ5Ee-KK-xslCIq3w"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_-vH7gjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_-vH7gzZ5Ee-KK-xslCIq3w"/>
+                            <element xmi:type="esb:LogMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.0"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vH7hDZ5Ee-KK-xslCIq3w" x="25" y="10" width="84" height="115"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_-vUv0DZ5Ee-KK-xslCIq3w" type="3739">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_-vUv1TZ5Ee-KK-xslCIq3w" type="5209"/>
+                            <children xmi:type="notation:Node" xmi:id="_-vZBQDZ5Ee-KK-xslCIq3w" type="3740">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vZBQTZ5Ee-KK-xslCIq3w"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_-vZBQjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_-vZBQzZ5Ee-KK-xslCIq3w"/>
+                              <element xmi:type="esb:RespondMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.1/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vZBRDZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_-vZoUDZ5Ee-KK-xslCIq3w" type="3741">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vZoUTZ5Ee-KK-xslCIq3w"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_-vZoUjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_-vZoUzZ5Ee-KK-xslCIq3w"/>
+                              <element xmi:type="esb:RespondMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.1/@outputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vZoVDZ5Ee-KK-xslCIq3w" x="64" y="-9"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vUv0TZ5Ee-KK-xslCIq3w"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_-vUv0jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_-vUv0zZ5Ee-KK-xslCIq3w"/>
+                            <element xmi:type="esb:RespondMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.1"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vUv1DZ5Ee-KK-xslCIq3w" x="149" y="10" width="84" height="115"/>
+                          </children>
+                          <styles xmi:type="notation:TitleStyle" xmi:id="_-uozVjZ5Ee-KK-xslCIq3w" showTitle="true"/>
+                        </children>
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uozUTZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-uozUjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-uozUzZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:MediatorFlow" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uozVDZ5Ee-KK-xslCIq3w"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-ugQcTZ5Ee-KK-xslCIq3w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_-ugQcjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_-ugQczZ5Ee-KK-xslCIq3w"/>
+                      <element xmi:type="esb:CacheMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-ugQdDZ5Ee-KK-xslCIq3w" x="25" y="95" width="170" height="100"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_-vd5wDZ5Ee-KK-xslCIq3w" type="3742">
+                      <children xmi:type="notation:Node" xmi:id="_-vfu8DZ5Ee-KK-xslCIq3w" type="3743">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vfu8TZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-vfu8jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-vfu8zZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CallMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vfu9DZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-vfu9TZ5Ee-KK-xslCIq3w" type="3744">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vfu9jZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-vfu9zZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-vfu-DZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CallMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vfu-TZ5Ee-KK-xslCIq3w" x="-11" y="-9"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-vfu-jZ5Ee-KK-xslCIq3w" type="3745">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vfu-zZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-vfu_DZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-vfu_TZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CallMediatorEndpointOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@endpointOutputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vfu_jZ5Ee-KK-xslCIq3w"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-vfu_zZ5Ee-KK-xslCIq3w" type="3746">
+                        <children xmi:type="notation:DecorationNode" xmi:id="_-vgWADZ5Ee-KK-xslCIq3w" type="7047">
+                          <children xmi:type="notation:Node" xmi:id="_-vnqwDZ5Ee-KK-xslCIq3w" type="3610">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_-vnqxTZ5Ee-KK-xslCIq3w" type="5199"/>
+                            <children xmi:type="notation:Node" xmi:id="_-vpf8DZ5Ee-KK-xslCIq3w" type="3030">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vpf8TZ5Ee-KK-xslCIq3w"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_-vpf8jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_-vpf8zZ5Ee-KK-xslCIq3w"/>
+                              <element xmi:type="esb:AddressEndPointInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@mediatorFlow/@children.0/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vpf9DZ5Ee-KK-xslCIq3w"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vnqwTZ5Ee-KK-xslCIq3w"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_-vnqwjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_-vnqwzZ5Ee-KK-xslCIq3w"/>
+                            <element xmi:type="esb:AddressEndPoint" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@mediatorFlow/@children.0"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vnqxDZ5Ee-KK-xslCIq3w" x="5" y="103"/>
+                          </children>
+                          <styles xmi:type="notation:TitleStyle" xmi:id="_-vgWATZ5Ee-KK-xslCIq3w" showTitle="true"/>
+                        </children>
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vfvADZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-vfvATZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-vfvAjZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:MediatorFlow" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@mediatorFlow"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vfvAzZ5Ee-KK-xslCIq3w"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vd5wTZ5Ee-KK-xslCIq3w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_-vd5wjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_-vd5wzZ5Ee-KK-xslCIq3w"/>
+                      <element xmi:type="esb:CallMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vd5xDZ5Ee-KK-xslCIq3w" x="388" y="95" width="170" height="100"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_-vyp4DZ5Ee-KK-xslCIq3w" type="3492">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_-vyp5TZ5Ee-KK-xslCIq3w" type="5167"/>
+                      <children xmi:type="notation:Node" xmi:id="_-v0fEDZ5Ee-KK-xslCIq3w" type="3033">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v0fETZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-v0fEjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-v0fEzZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:PropertyMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v0fFDZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-v0fFTZ5Ee-KK-xslCIq3w" type="3034">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v0fFjZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-v0fFzZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-v0fGDZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:PropertyMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v0fGTZ5Ee-KK-xslCIq3w" x="64" y="-9"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-vyp4TZ5Ee-KK-xslCIq3w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_-vyp4jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_-vyp4zZ5Ee-KK-xslCIq3w"/>
+                      <element xmi:type="esb:PropertyMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vyp5DZ5Ee-KK-xslCIq3w" x="598" y="95" width="84" height="115"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_-v8a4DZ5Ee-KK-xslCIq3w" type="3518">
+                      <children xmi:type="notation:Node" xmi:id="_-v-QEDZ5Ee-KK-xslCIq3w" type="3106">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v-QETZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-v-QEjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-v-QEzZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CacheMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v-QFDZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-v-QFTZ5Ee-KK-xslCIq3w" type="3107">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v-QFjZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-v-QFzZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-v-QGDZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CacheMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v-QGTZ5Ee-KK-xslCIq3w" x="-11" y="-9"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-v-3IDZ5Ee-KK-xslCIq3w" type="3618">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v-3ITZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-v-3IjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-v-3IzZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:CacheMediatorOnHitOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@onHitOutputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v-3JDZ5Ee-KK-xslCIq3w" x="80" y="-9"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-v-3JTZ5Ee-KK-xslCIq3w" type="3619">
+                        <children xmi:type="notation:DecorationNode" xmi:id="_-v-3KjZ5Ee-KK-xslCIq3w" type="7036">
+                          <styles xmi:type="notation:TitleStyle" xmi:id="_-v-3KzZ5Ee-KK-xslCIq3w" showTitle="true"/>
+                        </children>
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v-3JjZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-v-3JzZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-v-3KDZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:MediatorFlow" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@mediatorFlow"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v-3KTZ5Ee-KK-xslCIq3w"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-v8a4TZ5Ee-KK-xslCIq3w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_-v8a4jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_-v8a4zZ5Ee-KK-xslCIq3w"/>
+                      <element xmi:type="esb:CacheMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-v8a5DZ5Ee-KK-xslCIq3w" x="722" y="95" width="170" height="100"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_-wEWsDZ5Ee-KK-xslCIq3w" type="3495">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_-wEWtTZ5Ee-KK-xslCIq3w" type="5168"/>
+                      <children xmi:type="notation:Node" xmi:id="_-wGy8DZ5Ee-KK-xslCIq3w" type="3018">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-wGy8TZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-wGy8jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-wGy8zZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:LogMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-wGy9DZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-wGy9TZ5Ee-KK-xslCIq3w" type="3019">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-wGy9jZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-wGy9zZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-wGy-DZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:LogMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-wGy-TZ5Ee-KK-xslCIq3w" x="64" y="-9"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-wEWsTZ5Ee-KK-xslCIq3w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_-wEWsjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_-wEWszZ5Ee-KK-xslCIq3w"/>
+                      <element xmi:type="esb:LogMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-wEWtDZ5Ee-KK-xslCIq3w" x="932" y="95" width="84" height="115"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_-wM5kDZ5Ee-KK-xslCIq3w" type="3739">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_-wM5lTZ5Ee-KK-xslCIq3w" type="5209"/>
+                      <children xmi:type="notation:Node" xmi:id="_-wOuwDZ5Ee-KK-xslCIq3w" type="3740">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-wOuwTZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-wOuwjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-wOuwzZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:RespondMediatorInputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-wOuxDZ5Ee-KK-xslCIq3w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-wPV0DZ5Ee-KK-xslCIq3w" type="3741">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-wPV0TZ5Ee-KK-xslCIq3w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_-wPV0jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_-wPV0zZ5Ee-KK-xslCIq3w"/>
+                        <element xmi:type="esb:RespondMediatorOutputConnector" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-wPV1DZ5Ee-KK-xslCIq3w" x="64" y="-9"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-wM5kTZ5Ee-KK-xslCIq3w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_-wM5kjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_-wM5kzZ5Ee-KK-xslCIq3w"/>
+                      <element xmi:type="esb:RespondMediator" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-wM5lDZ5Ee-KK-xslCIq3w" x="1056" y="95" width="84" height="115"/>
+                    </children>
+                    <styles xmi:type="notation:TitleStyle" xmi:id="_-uQ_5jZ5Ee-KK-xslCIq3w" showTitle="true"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uQ_4TZ5Ee-KK-xslCIq3w"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_-uQ_4jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_-uQ_4zZ5Ee-KK-xslCIq3w"/>
+                  <element xmi:type="esb:MediatorFlow" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uQ_5DZ5Ee-KK-xslCIq3w"/>
+                </children>
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uPxwTZ5Ee-KK-xslCIq3w"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_-uPxwjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_-uPxwzZ5Ee-KK-xslCIq3w"/>
+                <element xmi:type="esb:ProxyServiceSequenceAndEndpointContainer" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uPxxDZ5Ee-KK-xslCIq3w"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-uQY0DZ5Ee-KK-xslCIq3w" type="3488">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uQY0TZ5Ee-KK-xslCIq3w"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_-uQY0jZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_-uQY0zZ5Ee-KK-xslCIq3w"/>
+                <element xmi:type="esb:ProxyServiceFaultContainer" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@faultContainer"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uQY1DZ5Ee-KK-xslCIq3w"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uMHdTZ5Ee-KK-xslCIq3w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_-uMHdjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_-uMHdzZ5Ee-KK-xslCIq3w"/>
+              <element xmi:type="esb:ProxyServiceContainer" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uMHeDZ5Ee-KK-xslCIq3w"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-uJEETZ5Ee-KK-xslCIq3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_-uJEEjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_-uJEEzZ5Ee-KK-xslCIq3w"/>
+            <element xmi:type="esb:APIResource" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uJEFDZ5Ee-KK-xslCIq3w" width="300" height="400"/>
+          </children>
+        </children>
+        <element xmi:type="esb:SynapseAPI" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-uBvUTZ5Ee-KK-xslCIq3w" width="640" height="500"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-h1tcTZ5Ee-KK-xslCIq3w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-h1tcjZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_-h1tczZ5Ee-KK-xslCIq3w"/>
+    <element xmi:type="esb:EsbServer" href="API_WSO2_Official_Cache_Example.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-h1tdDZ5Ee-KK-xslCIq3w"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_-hS64TZ5Ee-KK-xslCIq3w"/>
+  <element xmi:type="esb:EsbDiagram" href="API_WSO2_Official_Cache_Example.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_-wcxMDZ5Ee-KK-xslCIq3w" type="4001" source="_-uoMSjZ5Ee-KK-xslCIq3w" target="_-vLl4DZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wcxMTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@onHitOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wcxMjZ5Ee-KK-xslCIq3w" points="[11, 7, -5, -4]$[10, 6, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-wfNcDZ5Ee-KK-xslCIq3w" type="4001" source="_-vLl5TZ5Ee-KK-xslCIq3w" target="_-vZBQDZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wfNcTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wfNcjZ5Ee-KK-xslCIq3w" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-whCoDZ5Ee-KK-xslCIq3w" type="4001" source="_-uMHZTZ5Ee-KK-xslCIq3w" target="_-uoMQDZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-whCoTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-whCojZ5Ee-KK-xslCIq3w" points="[6, 5, -5, 0]$[5, 0, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-wi30DZ5Ee-KK-xslCIq3w" type="4001" source="_-uoMRTZ5Ee-KK-xslCIq3w" target="_-vfu8DZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wi30TZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wi30jZ5Ee-KK-xslCIq3w" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-wlUEDZ5Ee-KK-xslCIq3w" type="4001" source="_-vfu9TZ5Ee-KK-xslCIq3w" target="_-v0fEDZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wlUETZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wlUEjZ5Ee-KK-xslCIq3w" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-wo-cDZ5Ee-KK-xslCIq3w" type="4001" source="_-v0fFTZ5Ee-KK-xslCIq3w" target="_-v-QEDZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wo-cTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wo-cjZ5Ee-KK-xslCIq3w" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-wso0DZ5Ee-KK-xslCIq3w" type="4001" source="_-v-QFTZ5Ee-KK-xslCIq3w" target="_-wGy8DZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wso0TZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wso0jZ5Ee-KK-xslCIq3w" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-wwTMDZ5Ee-KK-xslCIq3w" type="4001" source="_-wGy9TZ5Ee-KK-xslCIq3w" target="_-wOuwDZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-wwTMTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-wwTMjZ5Ee-KK-xslCIq3w" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-xcPsDZ5Ee-KK-xslCIq3w" type="4001" source="_-vfu-jZ5Ee-KK-xslCIq3w" target="_-vpf8DZ5Ee-KK-xslCIq3w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-xcPsTZ5Ee-KK-xslCIq3w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="API_WSO2_Official_Cache_Example.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@endpointOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-xcPsjZ5Ee-KK-xslCIq3w" points="[2, 9, -31, -110]$[31, 114, -2, -5]"/>
+  </edges>
+</notation:Diagram>
