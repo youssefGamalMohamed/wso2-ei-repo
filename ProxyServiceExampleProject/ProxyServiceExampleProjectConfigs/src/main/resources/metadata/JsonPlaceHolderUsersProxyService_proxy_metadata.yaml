@@ -1,0 +1,10 @@
+---
+key: "JsonPlaceHolderUsersProxyService_proxy-1.0.0"
+name : "JsonPlaceHolderUsersProxyService"
+displayName : "JsonPlaceHolderUsersProxyService"
+description: "Sample Proxy Service"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/services/JsonPlaceHolderUsersProxyService"
+definitionType: "WSDL1"
+securityType: "BASIC"
+mutualSSLEnabled: false
