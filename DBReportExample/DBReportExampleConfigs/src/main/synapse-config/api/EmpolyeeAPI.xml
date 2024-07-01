@@ -11,6 +11,7 @@
                 <property expression="//age" name="age"/>
                 <property expression="//salary" name="salary"/>
             </log>
+            <transaction action="new" description="begin transaction"/>
             <dbreport description="insert employee to db">
                 <connection>
                     <pool>
@@ -28,9 +29,20 @@
                     <parameter expression="//salary" type="DOUBLE"/>
                 </statement>
             </dbreport>
+            <transaction action="commit" description="commit transaction"/>
             <respond/>
         </inSequence>
         <outSequence/>
-        <faultSequence/>
+        <faultSequence>
+            <log description="log start of FAULT SEQ" level="custom">
+                <property name="FAULT_SEQ" value="Start Of Fault SEQ........"/>
+            </log>
+            <transaction action="rollback" description="rollback sql from db"/>
+            <log category="ERROR" description="log errors " level="custom">
+                <property expression="get-property('ERROR_DETAIL')" name="ERROR_DETAIL"/>
+                <property expression="get-property('ERROR_CODE')" name="ERROR_CODE"/>
+                <property expression="get-property('ERROR_MESSAGE')" name="ERROR_MESSAGE"/>
+            </log>
+        </faultSequence>
     </resource>
 </api>
