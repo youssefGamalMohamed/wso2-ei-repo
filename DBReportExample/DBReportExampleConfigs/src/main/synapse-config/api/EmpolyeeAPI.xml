@@ -45,4 +45,106 @@
             </log>
         </faultSequence>
     </resource>
+    <resource methods="PUT" uri-template="/{empId}">
+        <inSequence>
+            <log description="log reuqest" level="custom">
+                <property expression="get-property('uri.var.empId')" name="Query Param => empId "/>
+                <property expression="json-eval($)" name="Request Body"/>
+            </log>
+            <dblookup description="find by id">
+                <connection>
+                    <pool>
+                        <driver>com.mysql.cj.jdbc.Driver</driver>
+                        <url>jdbc:mysql://localhost:3306/employee_db?useSSL=false</url>
+                        <user>root</user>
+                        <password>1234</password>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql><![CDATA[SELECT * FROM employees WHERE id = ?]]></sql>
+                    <parameter expression="get-property('uri.var.empId')" type="INTEGER"/>
+                    <result column="id" name="employee_id"/>
+                    <result column="name" name="employee_name"/>
+                    <result column="salary" name="employee_salary"/>
+                    <result column="age" name="employee_age"/>
+                </statement>
+            </dblookup>
+            <filter xpath="get-property('employee_id') != '' and get-property('employee_id') != 'null'">
+                <then>
+                    <log description="log by select by id result" level="custom">
+                        <property name="SELECT BY ID RESULT" value="DONE"/>
+                        <property expression="get-property('employee_id')" name="employee_id"/>
+                        <property expression="get-property('employee_name')" name="employee_name"/>
+                        <property expression="get-property('employee_age')" name="employee_age"/>
+                        <property expression="get-property('employee_salary')" name="employee_salary"/>
+                    </log>
+                </then>
+                <else>
+                    <log category="ERROR" description="log by select by id result" level="custom">
+                        <property name="FIND BY ID " value="EMPLOYEE NOT EXIST"/>
+                        <property expression="get-property('employee_id')" name="employee_id"/>
+                        <property expression="get-property('employee_name')" name="employee_name"/>
+                        <property expression="get-property('employee_age')" name="employee_age"/>
+                        <property expression="get-property('employee_salary')" name="employee_salary"/>
+                    </log>
+                    <loopback description="go to out-seq"/>
+                </else>
+            </filter>
+            <transaction action="new" description="begin transaction"/>
+            <dbreport description="update employee in db">
+                <connection>
+                    <pool>
+                        <driver>com.mysql.cj.jdbc.Driver</driver>
+                        <url>jdbc:mysql://localhost:3306/employee_db?useSSL=false</url>
+                        <user>root</user>
+                        <password>1234</password>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql><![CDATA[UPDATE employees SET name = ?, age = ?, salary = ? WHERE id = ?]]></sql>
+                    <parameter expression="//name" type="VARCHAR"/>
+                    <parameter expression="//age" type="INTEGER"/>
+                    <parameter expression="//salary" type="DOUBLE"/>
+                    <parameter expression="get-property('uri.var.empId')" type="INTEGER"/>
+                </statement>
+            </dbreport>
+            <transaction action="commit" description="commit transaction"/>
+            <respond/>
+        </inSequence>
+        <outSequence>
+            <property description="set http sc to 404" name="HTTP_SC" scope="axis2" type="STRING" value="404"/>
+            <payloadFactory description="set NOT FOUND Response" media-type="json">
+                <format>{&#xd;
+	"msg" : "no employee with id",&#xd;
+    "id" : $1&#xd;
+}</format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('uri.var.empId')"/>
+                </args>
+            </payloadFactory>
+            <log description="log response" level="custom">
+                <property expression="json-eval($)" name="RESPONSE"/>
+            </log>
+            <respond/>
+        </outSequence>
+        <faultSequence>
+            <log description="log start of FAULT SEQ" level="custom">
+                <property name="FAULT_SEQ" value="Start Of Fault SEQ........"/>
+            </log>
+            <transaction action="rollback" description="rollback sql from db"/>
+            <log category="ERROR" description="log errors " level="custom">
+                <property expression="get-property('ERROR_DETAIL')" name="ERROR_DETAIL"/>
+                <property expression="get-property('ERROR_CODE')" name="ERROR_CODE"/>
+                <property expression="get-property('ERROR_MESSAGE')" name="ERROR_MESSAGE"/>
+            </log>
+            <payloadFactory description="set internal sever error response" media-type="json">
+                <format>{&#xd;
+"msg" : "Internal Server Error"&#xd;
+}</format>
+                <args/>
+            </payloadFactory>
+            <property description="set HTTP SC to 500" name="HTTP_SC" scope="axis2" type="STRING" value="500"/>
+            <respond/>
+        </faultSequence>
+    </resource>
 </api>

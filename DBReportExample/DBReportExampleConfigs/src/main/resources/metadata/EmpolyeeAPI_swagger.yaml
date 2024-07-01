@@ -21,3 +21,26 @@ paths:
       responses:
         default:
           description: Default response
+  /{empId}:
+    put:
+      parameters:
+      - name: empId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
