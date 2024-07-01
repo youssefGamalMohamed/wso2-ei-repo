@@ -5,4 +5,10 @@
     <artifact name="JsonPlaceHolderUsersProxyService_proxy_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
         <file>src/main/resources/metadata/JsonPlaceHolderUsersProxyService_proxy_metadata.yaml</file>
     </artifact>
+    <artifact name="ListCountriesProxyService" groupId="com.example.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/ListCountriesProxyService.xml</file>
+    </artifact>
+    <artifact name="ListCountriesProxyService_proxy_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ListCountriesProxyService_proxy_metadata.yaml</file>
+    </artifact>
 </artifacts>

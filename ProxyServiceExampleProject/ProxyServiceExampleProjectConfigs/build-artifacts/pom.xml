@@ -16,5 +16,7 @@
   <modules>
     <module>proxy-services/JsonPlaceHolderUsersProxyService</module>
     <module>metadata/JsonPlaceHolderUsersProxyService_proxy_metadata</module>
+    <module>proxy-services/ListCountriesProxyService</module>
+    <module>metadata/ListCountriesProxyService_proxy_metadata</module>
   </modules>
 </project>
