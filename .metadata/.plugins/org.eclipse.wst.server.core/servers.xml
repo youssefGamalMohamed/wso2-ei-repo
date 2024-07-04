@@ -6,7 +6,7 @@
   <server hostname="localhost" id="org.wso2.micro.integrator.server40" id-set="true" name="Micro Integrator Server 4.0.0" runtime-id="org.wso2.micro.integrator.runtime40" server-type="org.wso2.integrationstudio.carbon.server44microei40" server-type-id="org.wso2.integrationstudio.carbon.server44microei40" start-timeout="600" stop-timeout="15" timestamp="2">
     <map carbon.debug="5001" carbon.home="D:\Programs\WSO2\IntegrationStudio\runtime\microesb" carbon.offset="10" hot.deployment="true" key="generic_server_instance_properties" osgi.console="false" synapse.transport.http="8280" synapse.transport.https="8243"/>
   </server>
-  <server hostname="localhost" id="org.wso2.micro.integrator.server42" id-set="true" name="Micro Integrator Server 4.2.0" runtime-id="org.wso2.micro.integrator.runtime42" server-type="org.wso2.integrationstudio.carbon.server44microei42" server-type-id="org.wso2.integrationstudio.carbon.server44microei42" start-timeout="600" stop-timeout="15" timestamp="7">
+  <server hostname="localhost" id="org.wso2.micro.integrator.server42" id-set="true" name="Micro Integrator Server 4.2.0" runtime-id="org.wso2.micro.integrator.runtime42" server-type="org.wso2.integrationstudio.carbon.server44microei42" server-type-id="org.wso2.integrationstudio.carbon.server44microei42" start-timeout="600" stop-timeout="15" timestamp="10">
     <map carbon.debug="5001" carbon.home="D:\Programs\WSO2\IntegrationStudio\runtime\microesb" carbon.offset="10" esb.debug="false" hot.deployment="true" key="generic_server_instance_properties" osgi.console="false" synapse.transport.http="8280" synapse.transport.https="8243"/>
   </server>
 </servers>
