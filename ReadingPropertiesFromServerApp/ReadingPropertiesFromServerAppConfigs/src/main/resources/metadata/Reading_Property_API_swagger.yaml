@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: Reading_Property_API
+  description: API Definition of Reading_Property_API
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/integrations/wso2/reading-property
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response

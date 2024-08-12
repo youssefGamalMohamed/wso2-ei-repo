@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/integrations/wso2/json-placeholder" name="Reading_JsonPlaceHolderUrlFromPropertiesFile_Api" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property description="load property from file.properties and set it to my property" expression="get-property('file','AiModel.BackendUrl.AnalyzeEndpoint')" name="jsonPlaceHolderBackendUrl" scope="default" type="STRING"/>
+            <call>
+                <endpoint>
+                    <http method="post" statistics="enable" trace="enable" uri-template="${jsonPlaceHolderBackendUrl}">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>-1</progressionFactor>
+                            <maximumDuration>0</maximumDuration>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </http>
+                    <description>Http Endpoint depend on the value of the property jsonPlaceHolderBackendUrl</description>
+                </endpoint>
+            </call>
+            <log description="log full response" level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

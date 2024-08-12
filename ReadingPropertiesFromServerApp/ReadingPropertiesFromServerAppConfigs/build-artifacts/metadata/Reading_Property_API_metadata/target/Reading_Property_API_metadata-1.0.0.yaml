@@ -1,0 +1,11 @@
+---
+key: "Reading_Property_API-1.0.0"
+name : "Reading_Property_API"
+displayName : "Reading_Property_API"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/integrations/wso2/reading-property"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/integrations/wso2/reading-property" name="Reading_Property_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log level="full"/>
+            <!-- Read environment variable myEnvVar into the property myReadedProp -->
+            <!-- Log the value of myReadedProp -->
+            <property expression="get-property('env','myEnvVar')" name="myVarEnvX" scope="default" type="STRING"/>
+            <log level="custom">
+                <property expression="$ctx:myVarEnvX" name="myReadedProp"/>
+            </log>
+            <log level="full">
+                <property expression="get-property('env','back-end-url')" name="back-end-url"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

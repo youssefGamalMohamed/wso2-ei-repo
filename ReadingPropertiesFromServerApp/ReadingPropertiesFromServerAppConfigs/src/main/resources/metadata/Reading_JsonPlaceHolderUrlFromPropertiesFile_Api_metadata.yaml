@@ -1,0 +1,11 @@
+---
+key: "Reading_JsonPlaceHolderUrlFromPropertiesFile_Api-1.0.0"
+name : "Reading_JsonPlaceHolderUrlFromPropertiesFile_Api"
+displayName : "Reading_JsonPlaceHolderUrlFromPropertiesFile_Api"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/integrations/wso2/json-placeholder"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/integrations/wso2/reading-property" name="Reading_Property_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log description="to log full request" level="full"/>
+            <!-- Read environment variable myEnvVar into the property myReadedProp -->
+            <!-- Log the value of myReadedProp -->
+            <log description="to log the property from file called file.properties in the installation of MI and this file contains the value backEndUrl to make it dynamic" level="custom">
+                <property expression="get-property('file','backEndUrl')" name="myReadedProp"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
