@@ -1,0 +1,11 @@
+---
+key: "Actors_API-1.0.0"
+name : "Actors_API"
+displayName : "Actors_API"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wso2/actors"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

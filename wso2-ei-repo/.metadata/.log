@@ -1,0 +1,338 @@
+!SESSION 2024-08-20 14:14:33.117 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.8-internal
+java.vendor=N/A
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\WorkSpaces\WSO2\wso2-ei-repo\wso2-ei-repo
+
+!ENTRY org.eclipse.ui 2 0 2024-08-20 14:15:08.185
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-20 14:15:08.185
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-20 14:15:09.522
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-20 14:15:09.522
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.jface 2 0 2024-08-20 14:15:11.365
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 14:15:11.365
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4cf1bd4a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26619e5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 14:15:11.365
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@445f6aa7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a4238ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-08-20 14:15:16.484
+!MESSAGE Removing PartDescriptorImpl with the "org.wso2.sample.multipage.form.editor.editors.FormView" id and the "My View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-20 14:15:16.574
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\youssef.gamal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-08-20 14:16:56.904 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.8-internal
+java.vendor=N/A
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/D:/WorkSpaces/WSO2/wso2-ei-repo/wso2-ei-repo/
+
+!ENTRY org.eclipse.ui 2 0 2024-08-20 14:17:31.764
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-20 14:17:31.764
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-20 14:17:33.211
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-20 14:17:33.211
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.jface 2 0 2024-08-20 14:17:34.936
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 14:17:34.937
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1013aa94,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36bd07ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 14:17:34.937
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@85b9f9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26a004ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-20 14:17:39.839
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\youssef.gamal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-08-20 14:17:39.872
+!MESSAGE Removing PartDescriptorImpl with the "org.wso2.sample.multipage.form.editor.editors.FormView" id and the "My View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-08-20 14:17:41.747
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.m2e.core.internal.launch.MavenRuntimeManagerImpl.setRuntimes(MavenRuntimeManagerImpl.java:133)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.setDefaultMavenInstallation(PlatformEarlyStartUpHandler.java:131)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:86)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 0 2024-08-20 14:17:41.776
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.wso2.integrationstudio.templates.dashboard' plug-in.
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.m2e.core.internal.launch.MavenRuntimeManagerImpl.setRuntimes(MavenRuntimeManagerImpl.java:133)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.setDefaultMavenInstallation(PlatformEarlyStartUpHandler.java:131)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:86)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-25 19:38:06.524 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.8-internal
+java.vendor=N/A
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2024-08-25 19:38:13.897
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-25 19:38:13.897
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-25 19:38:14.954
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-25 19:38:14.954
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.jface 2 0 2024-08-25 19:38:16.020
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-25 19:38:16.020
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24ea71d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76055d02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-25 19:38:16.020
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31c800a5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@130ad58d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-25 19:38:17.029
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\youssef.gamal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-08-25 19:38:17.037
+!MESSAGE Removing PartDescriptorImpl with the "org.wso2.sample.multipage.form.editor.editors.FormView" id and the "My View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-08-25 19:38:19.121
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.m2e.core.internal.launch.MavenRuntimeManagerImpl.setRuntimes(MavenRuntimeManagerImpl.java:133)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.setDefaultMavenInstallation(PlatformEarlyStartUpHandler.java:131)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:86)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 0 2024-08-25 19:38:19.128
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.wso2.integrationstudio.templates.dashboard' plug-in.
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.m2e.core.internal.launch.MavenRuntimeManagerImpl.setRuntimes(MavenRuntimeManagerImpl.java:133)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.setDefaultMavenInstallation(PlatformEarlyStartUpHandler.java:131)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:86)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-09-08 13:23:47.158 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.8-internal
+java.vendor=N/A
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\WorkSpaces\WSO2\wso2-ei-repo\wso2-ei-repo
+
+!ENTRY org.eclipse.ui 2 0 2024-09-08 13:23:50.144
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-08 13:23:50.144
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-08 13:23:50.867
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-08 13:23:50.867
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.jface 2 0 2024-09-08 13:23:52.131
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-09-08 13:23:52.131
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a5c6009,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c4e63b3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-09-08 13:23:52.131
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2703785e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a7f382,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-08 13:23:53.008
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\youssef.gamal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-09-08 13:23:53.037
+!MESSAGE Removing PartDescriptorImpl with the "org.wso2.sample.multipage.form.editor.editors.FormView" id and the "My View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-09-08 13:23:54.319
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.m2e.core.internal.launch.MavenRuntimeManagerImpl.setRuntimes(MavenRuntimeManagerImpl.java:133)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.setDefaultMavenInstallation(PlatformEarlyStartUpHandler.java:131)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:86)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 0 2024-09-08 13:23:54.321
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.wso2.integrationstudio.templates.dashboard' plug-in.
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.m2e.core.internal.launch.MavenRuntimeManagerImpl.setRuntimes(MavenRuntimeManagerImpl.java:133)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.setDefaultMavenInstallation(PlatformEarlyStartUpHandler.java:131)
+	at org.wso2.integrationstudio.templates.dashboard.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:86)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

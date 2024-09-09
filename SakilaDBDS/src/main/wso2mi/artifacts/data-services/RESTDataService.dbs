@@ -1,0 +1,69 @@
+<data transports="http https" serviceNamespace="http://ws.wso2.org/dataservice/samples/json_sample" name="RESTDataService">
+  <description>Exposing the data service as a REST service.</description>
+  <resource path="student" method="GET">
+    <call-query href="ReadStudents" />
+  </resource>
+  <resource path="student" method="POST">
+    <call-query href="CreateStudents">
+      <with-param name="name" query-param="name" />
+      <with-param name="school" query-param="school" />
+      <with-param name="grade" query-param="grade" />
+    </call-query>
+  </resource>
+  <resource path="student" method="PUT">
+    <call-query href="UpdateStudents">
+      <with-param name="name" query-param="name" />
+      <with-param name="school" query-param="school" />
+      <with-param name="grade" query-param="grade" />
+      <with-param name="id" query-param="id" />
+    </call-query>
+  </resource>
+  <resource path="student" method="DELETE">
+    <call-query href="DeleteStudent">
+      <with-param name="id" query-param="id" />
+    </call-query>
+  </resource>
+  <config id="default">
+    <property name="driverClassName">com.mysql.cj.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/sakila</property>
+    <property name="username">root</property>
+    <property name="password">1234</property>
+  </config>
+  <resource path="actors" method="GET">
+    <description />
+    <call-query href="GetAllActors" />
+  </resource>
+  <query id="ReadStudents" useConfig="default">
+    <sql>SELECT actor_id,first_name FROM actor</sql>
+  </query>
+  <query id="CreateStudents" useConfig="default">
+    <sql>INSERT INTO students (name, school, grade) VALUES (:name, :school, :grade)</sql>
+    <param name="name" sqlType="STRING" paramType="SCALAR" />
+    <param name="school" sqlType="STRING" paramType="SCALAR" />
+    <param name="grade" sqlType="INTEGER" paramType="SCALAR" />
+  </query>
+  <query id="UpdateStudents" useConfig="default">
+    <sql>UPDATE students SET name = :name, school = :school, grade = :grade WHERE id = :id</sql>
+    <param name="name" sqlType="STRING" paramType="SCALAR" />
+    <param name="school" sqlType="STRING" paramType="SCALAR" />
+    <param name="grade" sqlType="INTEGER" paramType="SCALAR" />
+    <param name="id" sqlType="INTEGER" paramType="SCALAR" />
+  </query>
+  <query id="DeleteStudent" useConfig="default">
+    <sql>DELETE FROM students WHERE id = :id</sql>
+    <param name="id" sqlType="INTEGER" paramType="SCALAR" />
+  </query>
+  <query id="GetAllActors" useConfig="default">
+    <sql>SELECT actor_id,first_name FROM actor</sql>
+    <result outputType="json">{
+    "actors": {
+        "actor": [
+            {
+                "actorId": "$actor_id",
+                "school": "$first_name"
+            }
+        ]
+    }
+}</result>
+  </query>
+</data>
